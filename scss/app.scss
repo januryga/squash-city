@@ -119,29 +119,39 @@ logo {
 		text-align:center;
 		margin-top: 2rem;
 	}
-}
 
+}
 .location-card.blue-city {
-	background-color: rgba(71, 147, 252, 0.8);
+//	background-color: rgba(71, 147, 252, 0.8);
 	background-image: url(../img/placeholders/blue-city-bg.jpg);
 }
 
 .location-card.targowek {
-	background-color: rgba(77, 181, 73, 0.8);
+//	background-color: rgba(77, 181, 73, 0.8);
 	background-image: url(../img/placeholders/targowek-bg.jpg);
 }
 
 
-.location-accordion-navigation{
 
-	@include accordion-navigation( $bg: white, $hover-bg: white, $active-bg: white,
-		$padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color,
-		$font-size: $accordion-navigation-font-size, $font-family: $accordion-navigation-font-family,
-		$active-font: $accordion-navigation-active-font-color );
-	margin: 1rem 0;
+.location-accordion {
 
-	.content {
-		@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
+	@include accordion-container;
+	margin-left: 0 !important;
+
+	.location-accordion-navigation{
+
+		@include accordion-navigation( $bg: none, $hover-bg: none, $active-bg: white,
+			$padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color,
+			$font-size: 10rem !important, $font-family: $accordion-navigation-font-family,
+			$active-font: $accordion-navigation-active-font-color );
+		margin: 1rem 0;
+
+		.content {
+			@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
+			p {
+				font-size:1.25rem;
+			}
+		}
 	}
 }
 
@@ -161,7 +171,6 @@ logo {
 	width: $profile-size;
 	
 	.profile-photo {
-		@extend .card;
 		background: none !important;
 		width: $profile-size;
 		height: $profile-size;
