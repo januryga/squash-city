@@ -5694,7 +5694,7 @@ meta.foundation-mq-topbar {
   background: white; }
   /* line 123, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
 
 /* line 129, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
 .fixed {
@@ -5724,7 +5724,7 @@ meta.foundation-mq-topbar {
   background: white;
   height: 2.8125rem;
   line-height: 2.8125rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   overflow: hidden;
   position: relative; }
   /* line 165, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
@@ -6192,7 +6192,7 @@ meta.foundation-mq-topbar {
   /* line 528, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     max-width: 62.5rem; }
   /* line 534, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .top-bar-section {
