@@ -3,7 +3,6 @@
 
 
 
-
 body {
 	a {
 		text-decoration: none !important;
@@ -133,6 +132,14 @@ logo {
 		background-image: url(../img/placeholders/targowek-bg.jpg);
 	}
 }
+
+.location-accordion-navigation{
+	@include accordion-navigation( $bg: white, $hover-bg: white, $active-bg: white, $padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color, $font-size: $accordion-navigation-font-size, $font-family: $accordion-navigation-font-family, $active-font: $accordion-navigation-active-font-color );
+	.content {
+		@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
+	}
+}
+
 
 
 
