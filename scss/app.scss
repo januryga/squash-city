@@ -140,7 +140,7 @@ logo {
 	}
 
 }
-.location-card.blue-city {
+.location-card.ochota {
 //	background-color: rgba(71, 147, 252, 0.8);
 	background-image: url(../img/placeholders/blue-city-bg.jpg);
 }
@@ -160,9 +160,7 @@ logo {
 	.location-accordion-navigation{
 
 		@include accordion-navigation( $bg: none, $hover-bg: none, $active-bg: white,
-			$padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color,
-			$font-size: 10rem !important, $font-family: $accordion-navigation-font-family,
-			$active-font: $accordion-navigation-active-font-color );
+			$padding: 0rem, $active_class: 'active', $font-size: 10rem !important);
 		margin: 1rem 0;
 
 		.content {
