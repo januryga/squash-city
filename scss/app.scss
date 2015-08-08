@@ -109,7 +109,7 @@ logo {
 	.location-card {
 		
 		@extend .card;
-		
+		margin: 0rem 0rem !important;
 		height:9rem;
 
 		.location-name {

@@ -11,7 +11,7 @@
 	<!-- Material Design Icons -->
 	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 	
-	<script src="js/vendor/modernizr.js"></script>
+<!--	<script src="js/vendor/modernizr.js"></script>-->
 
 </head>
 <body>
@@ -47,32 +47,51 @@
 					medium-5 medium-offset-1
 					large-4 large-offset-2
 					column">
-			<!-- Location Card -->
-			<div class="location-card-wrap">
-				<a href="#">
-					<div class="location-card blue-city">
-						<div class="location-name">Blue&nbsp;City</div>
+
+			<ul class="accordion" data-accordion>
+				<li class="accordion-navigation">
+					<a href="#blue-city-info">
+
+						<!-- Location Card -->
+						<div class="location-card-wrap">
+							<div class="location-card blue-city">
+								<div class="location-name">Blue&nbsp;City</div>
+							</div>
+						</div>
+						<!-- End Location Card -->
+					</a>
+					<div id="blue-city-info" class="content">
+						Fajne Korty Dużo Piłek
 					</div>
-				</a>
-			</div>
-			<!-- End Location Card -->
+				</li>
+			</ul>
+
 		</div>
 		<div class="small-12
 					medium-5
 					large-4
-					center column end">
-			<!-- Location Card -->
-			<div class="location-card-wrap">
-				<a href="#">
-					<div class="location-card targowek">
-						<div class="location-name">Targówek</div>
+					column end">
+
+			<ul class="accordion" data-accordion>
+				<li class="accordion-navigation">
+					<a href="#targowek-info">
+
+						<!-- Location Card -->
+						<div class="location-card-wrap">
+							<div class="location-card targowek">
+								<div class="location-name">Targówek</div>
+							</div>
+						</div>
+						<!-- End Location Card -->
+					</a>
+					<div id="targowek-info" class="content">
+						Fajne Korty Dużo Piłek
 					</div>
-				</a>
-			</div>
-			<!-- End Location Card -->
+				</li>
+			</ul>
+
 		</div>
 	</div>
-	Testujemy GitHuba
 	<!-- End Content -->
 	
 	
