@@ -3,6 +3,23 @@
 
 
 
+
+
+
+@mixin card($margin: false, $border: true) {
+	@if $margin { margin: 1rem 0rem; }
+	@if $border { border: 1px solid rgba(0,0,0,0.18); }
+
+	border-radius: 5px;
+    background: white;
+	overflow: hidden;
+	@extend .shadow;
+}
+
+
+
+
+
 body {
 	a {
 		text-decoration: none !important;
@@ -17,10 +34,14 @@ logo {
 	display:none;
 }
 .welcome-banner {
+	display:block;
 	width: 100%;
     min-height: 10rem;
+	text-align: center;
+
 	padding-top:1rem;
-    text-align: center;
+	padding-bottom:0.85rem;
+    margin-bottom: 0.85rem;
 	
 	background-color: $niceblue;
 	background-image: url('../img/squash-guy.jpg');
@@ -53,7 +74,7 @@ logo {
 	}
 	
 	.helper-button{
-		@extend .card;
+		@include card($margin: false);
 
 		padding-top:1.5rem;
 		padding-bottom: 0.6rem;
@@ -80,8 +101,7 @@ logo {
 	
 	.article-card {
 
-		@extend .card;
-		margin: 0 0 !important;
+		@include card;
 		
 		img {
 			display:block;
@@ -106,8 +126,7 @@ logo {
 
 .location-card {
 
-	@extend .card;
-	margin: 0rem 0rem !important;
+	@include card;
 	height:9rem;
 
 	.location-name {
@@ -148,6 +167,7 @@ logo {
 
 		.content {
 			@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
+			@include card;
 			p {
 				font-size:1.25rem;
 			}
@@ -171,6 +191,7 @@ logo {
 	width: $profile-size;
 	
 	.profile-photo {
+		@include card;
 		background: none !important;
 		width: $profile-size;
 		height: $profile-size;
@@ -185,22 +206,6 @@ logo {
 }
 
 
-
-
-
-.card {
-	margin: 1rem 0rem;
-	border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.18);
-    background: white;
-	overflow: hidden;
-	@extend .shadow;
-}
-
-.card-no-border {
-	@extend .card;
-	border: 0 !important;
-}
 
 .shadow {
     box-shadow: 0 2px 1px 0 rgba(0,0,0,0.37);
