@@ -103,39 +103,43 @@ logo {
 
 
 
-.location-card-wrap {
-	
-	.location-card {
-		
-		@extend .card;
-		margin: 0rem 0rem !important;
-		height:9rem;
 
-		.location-name {
-			
-			display: block;
-			font-size: 3rem;
-			font-weight: 300;
-			color: white !important;
-			text-align:center;
-			margin-top: 2rem;
-		}
-	}
-	
-	.location-card.blue-city {
-		background-color: rgba(71, 147, 252, 0.8);
-		background-image: url(../img/placeholders/blue-city-bg.jpg);
-	}
-	
-	.location-card.targowek {
-		background-color: rgba(77, 181, 73, 0.8);
-		background-image: url(../img/placeholders/targowek-bg.jpg);
+.location-card {
+
+	@extend .card;
+	margin: 0rem 0rem !important;
+	height:9rem;
+
+	.location-name {
+
+		display: block;
+		font-size: 3rem;
+		font-weight: 300;
+		color: white !important;
+		text-align:center;
+		margin-top: 2rem;
 	}
 }
 
+.location-card.blue-city {
+	background-color: rgba(71, 147, 252, 0.8);
+	background-image: url(../img/placeholders/blue-city-bg.jpg);
+}
+
+.location-card.targowek {
+	background-color: rgba(77, 181, 73, 0.8);
+	background-image: url(../img/placeholders/targowek-bg.jpg);
+}
+
+
 .location-accordion-navigation{
-	@include accordion-navigation( $bg: white, $hover-bg: white, $active-bg: white, $padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color, $font-size: $accordion-navigation-font-size, $font-family: $accordion-navigation-font-family, $active-font: $accordion-navigation-active-font-color );
+
+	@include accordion-navigation( $bg: white, $hover-bg: white, $active-bg: white,
+		$padding: 0rem, $active_class: 'active',  $font-color: $accordion-navigation-font-color,
+		$font-size: $accordion-navigation-font-size, $font-family: $accordion-navigation-font-family,
+		$active-font: $accordion-navigation-active-font-color );
 	margin: 1rem 0;
+
 	.content {
 		@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
 	}
