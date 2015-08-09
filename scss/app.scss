@@ -19,12 +19,14 @@
 
 
 
-
 body {
 	a {
 		text-decoration: none !important;
+		//color: $niceblue;
 	}
 }
+
+
 
 
 
@@ -202,6 +204,50 @@ logo {
 	}
 	
 }
+
+.profile-reveal {
+	@include reveal-modal-base(
+    $base-style:true,
+    $width:60%
+	);
+
+	@include reveal-modal-style(
+    $bg:white,
+    $border:true,
+    $border-style:$reveal-border-style,
+    $border-width:$reveal-border-width,
+    $border-color:$reveal-border-color,
+    $box-shadow:true,
+    $top-offset:$reveal-position-top
+ 	);
+
+	@include card;
+	@include reveal-close(
+	$color:$reveal-close-color
+	);
+
+	max-width:40rem !important;
+	padding: 0.75em;
+	color:black;
+
+	.name {
+		margin-top:0.5rem;
+		font-size: 3rem;
+		font-weight: 300;
+	}
+
+	.close-reveal-modal {
+		color:darken($softgrey, 20%) !important;
+		position:absolute;
+		top:1.2rem;
+		right:2rem;
+	}
+	a {
+		font-weight:300;
+	}
+
+}
+
 
 
 
