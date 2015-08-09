@@ -6,9 +6,10 @@
 
 
 
-@mixin card($margin: false, $border: true) {
+@mixin card($margin: false, $border: true, $transp-border:false) {
 	@if $margin { margin: 1rem 0rem; }
-	@if $border { border: 1px solid rgba(0,0,0,0.18); }
+	@if $border { border: 1px solid $bordergrey; }
+	@if $transp-border { border: 1px solid $bordergrey-t; }
 
 	border-radius: 5px;
     background: white;
@@ -103,7 +104,7 @@ logo {
 	
 	.article-card {
 
-		@include card;
+		@include card();
 		
 		img {
 			display:block;
@@ -112,6 +113,7 @@ logo {
 			
 			width:100%;
 			max-height:9rem;
+			border-bottom: 1px solid $bordergrey-t;
 		}
 
 		article-title {
@@ -128,7 +130,7 @@ logo {
 
 .location-card {
 
-	@include card;
+	@include card($transp-border:true);
 	height:9rem;
 
 	.location-name {
@@ -193,8 +195,6 @@ logo {
 	padding: 1.4rem;
 	color:black;
 
-	
-
 	img {
 
 		//@include card;
@@ -205,6 +205,8 @@ logo {
 		$profile-size: 8rem;
 		width: $profile-size;
 		height: $profile-size;
+
+		border: 2px solid $bordergrey-t;
 		border-radius: ($profile-size / 2) !important;
 		margin-bottom:2px;
 	}
