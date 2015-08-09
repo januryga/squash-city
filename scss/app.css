@@ -8284,10 +8284,10 @@ logo {
 	$profile-size: 8rem;
 }*/
 /* line 186, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.profile-card {
+.profile-card-mini {
   width: 6rem; }
   /* line 191, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-  .profile-card .profile-photo {
+  .profile-card-mini .profile-photo {
     border: 1px solid rgba(0, 0, 0, 0.18);
     border-radius: 5px;
     background: white;
@@ -8298,93 +8298,45 @@ logo {
     border-radius: 3rem !important;
     margin-bottom: 0.8rem !important; }
   /* line 200, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-  .profile-card .profile-label {
+  .profile-card-mini .profile-label {
     text-align: center; }
 
 /* line 206, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.profile-reveal {
-  border-radius: 3px;
-  display: none;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  width: 100%;
-  z-index: 1005;
-  left: 0;
-  background-color: white;
-  border: solid 1px #666666;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+.profile-card {
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 5px;
   background: white;
   overflow: hidden;
-  color: #AAAAAA;
-  cursor: pointer;
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1;
-  position: absolute;
-  top: 0.625rem;
-  right: 1.375rem;
   max-width: 40rem !important;
   padding: 2rem;
-  padding-bottom: 2.5rem;
   color: black; }
-  @media only screen and (max-width: 40em) {
-    /* line 206, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-    .profile-reveal {
-      min-height: 100vh; } }
-  /* line 89, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_reveal.scss */
-  .profile-reveal .column, .profile-reveal .columns {
-    min-width: 0; }
-  /* line 92, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_reveal.scss */
-  .profile-reveal > :first-child {
-    margin-top: 0; }
-  /* line 94, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_reveal.scss */
-  .profile-reveal > :last-child {
-    margin-bottom: 0; }
-  @media only screen and (min-width: 40.0625em) {
-    /* line 206, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-    .profile-reveal {
-      left: 0;
-      margin: 0 auto;
-      max-width: 62.5rem;
-      right: 0;
-      width: 60%; } }
-  @media only screen and (min-width: 40.0625em) {
-    /* line 206, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-    .profile-reveal {
-      top: 6.25rem; } }
-  /* line 232, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-  .profile-reveal .name {
-    margin-top: 0.5rem;
-    font-size: 3rem;
+  /* line 214, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  .profile-card .name {
+    font-size: 2.3rem;
     font-weight: 300; }
-  /* line 238, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-  .profile-reveal .close-reveal-modal {
-    color: #adadad !important;
-    position: absolute;
-    top: 1.2rem;
-    right: 2rem; }
-  /* line 244, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-  .profile-reveal a {
-    font-weight: 300; }
+  /* line 220, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  .profile-card a {
+    font-weight: 300;
+    font-size: 1.6rem; }
+  /* line 226, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  .profile-card p {
+    margin-bottom: 0 !important; }
 
-/* line 254, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.shadow, .helper-button-wrap .helper-button, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card .profile-photo, .profile-reveal {
+/* line 235, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+.shadow, .helper-button-wrap .helper-button, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card-mini .profile-photo, .profile-card {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.37); }
 
-/* line 258, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 239, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 268, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 249, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   nav.top-bar {
     text-align: center; }
-  /* line 271, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 252, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   section.top-bar-section {
     display: inline-block; } }
 

@@ -76,7 +76,7 @@ logo {
 	}
 	
 	.helper-button{
-		@include card($margin: false);
+		@include card;
 
 		padding-top:1.5rem;
 		padding-bottom: 0.6rem;
@@ -183,7 +183,7 @@ logo {
 	$profile-size: 8rem;
 }*/
 
-.profile-card {
+.profile-card-mini {
 	
 	$profile-size: 6rem;
 	width: $profile-size;
@@ -203,47 +203,28 @@ logo {
 	
 }
 
-.profile-reveal {
-	@include reveal-modal-base(
-    $base-style:true,
-    $width:60%
-	);
-
-	@include reveal-modal-style(
-    $bg:white,
-    $border:true,
-    $border-style:$reveal-border-style,
-    $border-width:$reveal-border-width,
-    $border-color:$reveal-border-color,
-    $box-shadow:true,
-    $top-offset:$reveal-position-top
- 	);
+.profile-card {
 
 	@include card;
-	@include reveal-close(
-	$color:$reveal-close-color
-	);
 
 	max-width:40rem !important;
 	padding: 2rem;
-	padding-bottom:2.5rem;
 	color:black;
 
 	.name {
-		margin-top:0.5rem;
-		font-size: 3rem;
+		//margin-top:0.5rem;
+		font-size: 2.3rem;
 		font-weight: 300;
 	}
 
-	.close-reveal-modal {
-		color:darken($softgrey, 20%) !important;
-		position:absolute;
-		top:1.2rem;
-		right:2rem;
-	}
 	a {
+		//margin-top:-0.5rem !important;
 		font-weight:300;
+		font-size:1.6rem;
 		//border-bottom: 2px solid $niceblue;
+	}
+	p {
+		margin-bottom:0 !important;
 	}
 
 }
