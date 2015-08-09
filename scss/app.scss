@@ -143,12 +143,10 @@ logo {
 
 }
 .location-card.ochota {
-//	background-color: rgba(71, 147, 252, 0.8);
 	background-image: url(../img/placeholders/blue-city-bg.jpg);
 }
 
 .location-card.targowek {
-//	background-color: rgba(77, 181, 73, 0.8);
 	background-image: url(../img/placeholders/targowek-bg.jpg);
 }
 
@@ -227,7 +225,8 @@ logo {
 	);
 
 	max-width:40rem !important;
-	padding: 0.75em;
+	padding: 2rem;
+	padding-bottom:2.5rem;
 	color:black;
 
 	.name {
@@ -244,6 +243,7 @@ logo {
 	}
 	a {
 		font-weight:300;
+		//border-bottom: 2px solid $niceblue;
 	}
 
 }
