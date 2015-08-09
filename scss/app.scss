@@ -203,12 +203,12 @@ logo {
 	
 }
 
-.custom-reveal-class {
+.profile-reveal {
 	@include reveal-modal-base(
     // Provides reveal base styles, can be set to false to override.
     $base-style:true,
     // Sets reveal width Default: $reveal-default-width or 80%
-    $width:$reveal-default-width
+    $width:60%
 	);
 
 	@include reveal-modal-style(
@@ -233,9 +233,15 @@ logo {
 	$color:$reveal-close-color
 	);
 
+	max-width:40rem !important;
 	padding: 0.75em;
 	color:black;
 
+	.name {
+		margin-top:0.5rem;
+		font-size: 3rem;
+		font-weight: 300;
+	}
 
 }
 
