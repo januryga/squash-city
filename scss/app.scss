@@ -183,36 +183,34 @@ logo {
 	$profile-size: 8rem;
 }*/
 
-.profile-card-mini {
-	
-	$profile-size: 6rem;
-	width: $profile-size;
-	
-	.profile-photo {
-		@include card;
-		background: none !important;
-		width: $profile-size;
-		height: $profile-size;
-		border-radius: ($profile-size / 2) !important;
-		margin-bottom: 0.8rem !important;
-	}
-	
-	.profile-label {
-		text-align: center;
-	}
-	
-}
+
 
 .profile-card {
 
 	@include card;
 
 	//max-width:30rem !important;
-	padding: 2rem;
+	padding: 1.4rem;
 	color:black;
 
+	
+
+	img {
+
+		//@include card;
+		background: none !important;
+		object-fit:cover;
+		object-position:center;
+
+		$profile-size: 8rem;
+		width: $profile-size;
+		height: $profile-size;
+		border-radius: ($profile-size / 2) !important;
+		margin-bottom:2px;
+	}
+
 	.name {
-		//margin-top:0.5rem;
+		margin-top:0.6rem;
 		font-size: 2.3rem;
 		font-weight: 300;
 	}
