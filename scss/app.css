@@ -8316,21 +8316,39 @@ logo {
   .profile-card p {
     margin-bottom: 0 !important; }
 
-/* line 235, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.shadow, .helper-button-wrap .helper-button, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card {
+/* line 233, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+.ceny {
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  background: white;
+  overflow: hidden; }
+  /* line 235, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  .ceny tr td {
+    text-align: center !important; }
+
+/* line 243, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+ho:after {
+  vertical-align: super;
+  font-size: 60%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 0px 1px;
+  content: "00"; }
+
+/* line 253, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+.shadow, .helper-button-wrap .helper-button, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card, .ceny {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.37); }
 
-/* line 239, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 257, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 249, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 267, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   nav.top-bar {
     text-align: center; }
-  /* line 252, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 270, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   section.top-bar-section {
     display: inline-block; } }
 

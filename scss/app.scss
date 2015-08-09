@@ -230,7 +230,25 @@ logo {
 }
 
 
+.ceny {
+	@include card;
+	tr td {
+		text-align:center !important;
+	}
+}
 
+
+
+ho {
+	&:after{
+		vertical-align: super;
+		font-size:60%;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+		margin: 0px 1px;
+		content:"00";
+	}
+
+}
 
 .shadow {
     box-shadow: 0 2px 1px 0 rgba(0,0,0,0.37);
