@@ -11,7 +11,13 @@
 	<!-- Material Design Icons -->
 	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
+	<!-- Responsive Tables -->
+	<!-- <link type="text/css" media="screen" href="css/responsive-tables.css">
+	<script type="text/javascript" src="js/responsive-tables.js"></script> -->
+
+
 	<script src="js/vendor/modernizr.js"></script>
+
 
 </head>
 <body>
@@ -41,11 +47,59 @@
 	</div>
 	<!-- End Navbar  -->
 
+	<!-- Content -->
 
-	<!-- Welcome Banner -->
 	<div class="row collapse">
-		<div class="small-12 medium-12 large-12 column">
-			<table class="ceny">
+		<div class="small-12 medium-8 large-7 column center">
+
+			<table class="price-table">
+				<thead>
+					<tr>
+						<td colspan="3">Poniedziałek - Piątek</td>
+						<td>Weekend</td>
+					</tr>
+				</thead>
+				<tbody>
+
+					<col>
+					<col>
+					<col>
+					<col>
+
+					<tr class="hours">
+						<td><ho>7</ho> - <ho>9</ho></td>
+						<td><ho>10</ho> - <ho>16</ho></td>
+						<td><ho>17</ho> - <ho>23</ho></td>
+						<td><ho>7</ho> - <ho>22</ho></td>
+					</tr>
+					<tr>
+						<td>45zł</td>
+						<td>55zł</td>
+						<td>65zł</td>
+						<td>65zł</td>
+					</tr>
+					<tr class="member">
+						<td>35zł</td>
+						<td>45zł</td>
+						<td>55zł</td>
+						<td>55zł</td>
+					</tr>
+
+					<tr class="member">
+						<td colspan="4"><i class="mdi mdi-star-circle"></i> z kartą członkowską</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+	<br>
+
+	<div class="row">
+		<div class="small-12 medium-8 large-6 column center">
+			<table class="price-table">
 				<thead>
 					<tr>
 						<td style=""></td>
@@ -55,17 +109,17 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>7<ho></ho> - 9<ho></ho><br>
+						<td><ho>7</ho> - <ho>9</ho><br>
 						</td>
 						<td>55zł</td>
 						<td rowspan="3">65zł</td>
 					</tr>
 					<tr>
-						<td>10<ho></ho> - 16<ho></ho></td>
+						<td><ho>10</ho> - <ho>16</ho></td>
 						<td>45zł</td>
 					</tr>
 					<tr>
-						<td>17<ho></ho> - 23<ho></ho></td>
+						<td><ho>17</ho> - <ho>23</ho></td>
 						<td>65zł</td>
 					</tr>
 				</tbody>
