@@ -1,15 +1,40 @@
 @import "_settings";
-@import "foundation";
+
+@import
+	"foundation/components/accordion",
+	"foundation/components/block-grid",
+	"foundation/components/buttons",
+	"foundation/components/button-groups",
+	"foundation/components/clearing",
+	"foundation/components/grid",
+	"foundation/components/inline-lists",
+	"foundation/components/orbit",
+	"foundation/components/reveal",
+	"foundation/components/split-buttons",
+	"foundation/components/top-bar",
+	"foundation/components/visibility",
+	"foundation/components/type";
+
+//@import "foundation";
 
 
 
 
 
 
-@mixin card($margin: false, $border: true, $transp-border:false) {
+@mixin card($margin: false, $border: true, $border-transp:false) {
 	@if $margin { margin: 1rem 0rem; }
-	@if $border { border: 1px solid $bordergrey; }
-	@if $transp-border { border: 1px solid $bordergrey-t; }
+	@if $border {
+		border-top: 1px solid $bordergrey;
+		border-right: 1px solid $bordergrey;
+		border-left: 1px solid $bordergrey;
+	}
+
+	@if $border-transp {
+		border-top: 1px solid $bordergrey-t;
+		border-right: 1px solid $bordergrey-t;
+		border-left: 1px solid $bordergrey-t;
+	}
 
 	border-radius: 5px;
     background: white;
@@ -130,7 +155,7 @@ logo {
 
 .location-card {
 
-	@include card($transp-border:true);
+	@include card($border-transp:true);
 	height:9rem;
 
 	.location-name {
@@ -230,7 +255,86 @@ logo {
 }
 
 
+.price-table {
+	@include card;
 
+	postion: relative;
+	border-collapse: collapse;
+	width:100%;
+
+	thead {
+		font-weight: 300;
+		td {
+			padding-left: 1rem !important;
+			padding-right: 1rem !important;
+		}
+	}
+
+	col {
+		border: 1px solid $bordergrey-t5;
+	}
+	//use nth-child to make thicken border between Pon-Pt. And Weekend
+
+	tr.hours {
+		font-weight: 300;
+		border-bottom: 1px solid $bordergrey-t12;
+		td {
+			padding:0.15rem 0.5rem !important;
+			background-color: $lightgrey;
+			border-left: 1px solid $bordergrey-t5;
+		}
+	}
+
+	td {
+		font-size: 1.3rem;
+		text-align:center !important;
+		padding: 0.5rem;
+	}
+
+	tr.description {
+		td {
+			padding: 0.4rem 0.8rem 0.1rem 0.8rem;
+			font-size: 0.9rem;
+			text-align: left !important;
+			//background-color:rgba(0, 0, 0, 0.03);
+		}
+	}
+
+
+
+	tr.squash-city {
+		background-color: lighten($success-color, 38%);
+		color: $success-color;
+	}
+
+	tr.sport-card {
+		$sport-card-color: #014cf5;
+		background-color: lighten($sport-card-color, 32%);
+		color: $sport-card-color;
+	}
+
+	tr.gold-squash {
+		$gold-squash-color: #aa860e;
+		background-color: lighten($gold-squash-color, 38%);
+		color: $gold-squash-color;
+	}
+
+}
+
+
+
+ho {
+	font-size: 0.9rem !important;
+	font-weight:500;
+
+	&:after{
+		vertical-align: super;
+		font-size:60%;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+		margin: 0px 1px;
+		content:"00";
+	}
+}
 
 .shadow {
     box-shadow: 0 2px 1px 0 rgba(0,0,0,0.37);
@@ -254,6 +358,8 @@ logo {
 	}
 }
 	
+
+
 
 // Or selectively include components
 // @import
