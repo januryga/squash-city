@@ -42,6 +42,13 @@
 	@extend .shadow;
 }
 
+@mixin round($size: 8rem) {
+	width: $size;
+	height: $size;
+
+	border: 2px solid $bordergrey-t;
+	border-radius: ($size / 2) !important;
+}
 
 
 
@@ -220,34 +227,42 @@ logo {
 	padding: 1.4rem;
 	color:black;
 
+
 	img {
 
-		//@include card;
+		display:inline-block;
+		vertical-align: top;
 		background: none !important;
 		object-fit:cover;
 		object-position:center;
 
-		$profile-size: 8rem;
-		width: $profile-size;
-		height: $profile-size;
 
-		border: 2px solid $bordergrey-t;
-		border-radius: ($profile-size / 2) !important;
-		margin-bottom:2px;
+		@media #{$medium-up} {
+			@include round($size: 8rem);
+		}
+		@media #{$small-only} {
+			@include round($size: 6rem);
+		}
+
 	}
 
-	.name {
-		margin-top:0.6rem;
+	.profile-info {
+		display: inline-block;
+		vertical-align:middle;
+
+		//margin-top:0.6rem;
 		font-size: 2.3rem;
 		font-weight: 300;
-	}
 
-	a {
+		a {
 		//margin-top:-0.5rem !important;
+		display:block;
 		font-weight:300;
 		font-size:1.6rem;
 		//border-bottom: 2px solid $niceblue;
+		}
 	}
+
 	p {
 		margin-bottom:0 !important;
 	}
@@ -327,7 +342,7 @@ ho {
 	font-size: 0.9rem !important;
 	font-weight:500;
 
-	@media #{$small} {
+	@media #{$small-only} {
 		&:after{
 			vertical-align: super;
 			font-size:60%;
