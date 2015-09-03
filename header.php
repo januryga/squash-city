@@ -17,7 +17,16 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-	<!--  Navbar  -->
+
+<?php
+	$params = array(
+		'theme_location'  => 'header-menu-desktop',
+		'menu'            => '',
+		'link_before'     => '<i class="mdi mdi-cash"></i>',
+	);
+?>
+
+<!--  Navbar  -->
 	<div class="fixed">
 		<nav class="top-bar shadow" data-topbar role="navigation">
 			<ul class="title-area">
@@ -30,12 +39,7 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
-					<li class="active"><a href="index.html"><i class="mdi mdi-home"></i> Home</a></li>
-					<li><a href="rezerwacja.html"><i class="mdi mdi-calendar-plus"></i> Rezerwacja</a></li>
-					<li><a href="#"><i class="mdi mdi-home-modern"></i> Nasze Kluby</a></li>
-					<li><a href="trenerzy.html"><i class="mdi mdi-account-multiple"></i> Trenerzy</a></li>
-					<li><a href="cennik.html"><i class="mdi mdi-cash"></i> Cennik</a></li>
-					<li><a href="kontakt.html"><i class="mdi mdi-phone"></i> Kontakt</a></li>
+					<?php wp_nav_menu( $params ); ?>
 				</ul>
 
 			</section>
