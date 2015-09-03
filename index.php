@@ -80,7 +80,8 @@
 					   large-block-grid-3">
 
 
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php $query = new WP_Query( 'category_name=news' ); ?>
+ 				<?php: while ( $query->have_posts() ) : $query->the_post(); ?>
 
 					<li>
 
@@ -88,7 +89,8 @@
 
 					</li>
 
-				<?php endwhile; endif; ?>
+				<?php endwhile;
+ 				wp_reset_postdata(); ?>
 
 			</ul>
 		</div>
