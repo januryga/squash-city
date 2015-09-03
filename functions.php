@@ -6,7 +6,7 @@
 
 	//add the nav menu
 	register_nav_menus( array(
-		'header-menu-desktop' => 'Header Menu Desktop'
+		'header-menu' => 'Header Menu'
 	) );
 
 

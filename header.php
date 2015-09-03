@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Squash City</title>
 
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/scss/app.css" type="text/css" media="screen" />
 
 	<!-- Open Sans -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
@@ -18,12 +18,8 @@
 </head>
 <body>
 
-<?php
-	$menu_params = array(
-		'theme_location'  => 'header-menu-desktop',
-		'menu'            => '',
-	);
-?>
+
+
 
 <!--  Navbar  -->
 	<div class="fixed">
@@ -38,7 +34,15 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
-					<?php wp_nav_menu( $menu_params ); ?>
+					<?php
+
+					$params = array(
+						'theme_location'  => 'header-menu',
+						'menu'            => '',
+					);
+					wp_nav_menu( $params );
+
+					?>
 				</ul>
 
 			</section>
