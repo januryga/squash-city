@@ -2,14 +2,18 @@
 <div class="profile-card">
 
 	<!-- Photo & Name -->
-	<img src="<?php the_post_thumbnail(); ?>">
+	<?php the_thumbnail() ?>
+
 	<div class="profile-info">
-		<?php the_title(); ?>
-		<a href="tel:509123577"><i class="mdi mdi-phone"></i> 509 123 577</a>
+		<?php the_name(); ?>
+		<a href="tel:<?php the_phone(); ?>">
+			<i class="mdi mdi-phone"></i> <?php the_phone(); ?>
+		</a>
 	</div>
 	<!-- End Photo & Name -->
 
 	<!-- About Text -->
-	<?php the_content(); ?>
+	<p><?php the_content(); ?></p>
 	<!-- End About Text -->
 </div>
+<!-- Profile Card -->
