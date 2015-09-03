@@ -68,12 +68,6 @@ body {
 
 
 
-
-logo {
-	font-size:2.5em;
-	line-height:1em;
-	display:none;
-}
 .welcome-banner {
 	display:block;
 	width: 100%;
@@ -349,7 +343,7 @@ ho {
 	font-size: 0.9rem !important;
 	font-weight:500;
 
-	@media #{$small-only} {
+	@media #{$medium-up} {
 		&:after{
 			vertical-align: super;
 			font-size:60%;

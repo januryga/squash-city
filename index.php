@@ -15,7 +15,7 @@
 
 						<!-- Button -->
 						<div class="helper-button-wrap">
-							<a href="rezerwacja.html">
+							<a href="http://squashcity.kylos.pl/rezerwacja">
 								<div class="helper-button">
 									<i class="mdi mdi-large mdi-calendar-plus"></i>
 									<br>
@@ -48,7 +48,7 @@
 
 						<!-- Button -->
 						<div class="helper-button-wrap">
-							<a href="kontakt.html">
+							<a href="http://squashcity.kylos.pl/kontakt">
 								<div class="helper-button">
 									<i class="mdi mdi-large mdi-navigation"></i>
 									<br>
