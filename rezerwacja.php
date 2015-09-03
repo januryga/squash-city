@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Rezerwacja
+*/
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
