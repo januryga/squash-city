@@ -19,10 +19,9 @@
 <body>
 
 <?php
-	$params = array(
+	$menu_params = array(
 		'theme_location'  => 'header-menu-desktop',
 		'menu'            => '',
-		'link_before'     => '<i class="mdi mdi-cash"></i>',
 	);
 ?>
 
@@ -39,7 +38,7 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
-					<?php wp_nav_menu( $params ); ?>
+					<?php wp_nav_menu( $menu_params ); ?>
 				</ul>
 
 			</section>

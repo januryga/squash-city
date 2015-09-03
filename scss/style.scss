@@ -170,15 +170,16 @@ logo {
 
 	@include card($border-transp:true);
 	height:9rem;
+	background-color: $niceblue;
 
 	.location-name {
 
 		display: block;
+		text-align:center;
+		margin-top: 2rem;
 		font-size: 3rem;
 		font-weight: 300;
 		color: white !important;
-		text-align:center;
-		margin-top: 2rem;
 	}
 
 }
