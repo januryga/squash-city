@@ -1,3 +1,9 @@
+/*
+Theme Name: Squash City
+Author: Jan Uryga
+Version: 1.0
+*/
+
 @import "_settings";
 
 @import
@@ -77,12 +83,12 @@ logo {
 	padding-top:1rem;
 	padding-bottom:0.85rem;
     margin-bottom: 0.85rem;
-	
+
 	background-color: $niceblue;
 	background-image: url('../img/squash-guy.jpg');
 	background-size:cover;
     background-position: center top;
-	
+
 	.welcome-text {
 		display:block;
 		font-size: 3rem;
@@ -97,7 +103,7 @@ logo {
 
 
 .helper-button-wrap {
-	
+
 	a:link, a:visited {
 		color: $niceblue;
 	}
@@ -107,7 +113,7 @@ logo {
 	a:active {
 		color: darken($niceblue, 15%);
 	}
-	
+
 	.helper-button{
 		@include card;
 
@@ -119,8 +125,8 @@ logo {
 		text-align: center;
 		text-decoration: none;
 	}
-	
-	i { 
+
+	i {
 		font-size: 3rem;
 	}
 	helper-label {
@@ -133,16 +139,16 @@ logo {
 
 
 .article-card-wrap {
-	
+
 	.article-card {
 
 		@include card();
-		
+
 		img {
 			display:block;
 			object-fit:cover;
 			object-position:center;
-			
+
 			width:100%;
 			max-height:9rem;
 			border-bottom: 1px solid $bordergrey-t;
@@ -213,7 +219,7 @@ logo {
 /*@media (#{$small}) or (#{$medium}) {
 	$profile-size: 6rem;
 }
-@media #{$large-up} { 
+@media #{$large-up} {
 	$profile-size: 8rem;
 }*/
 
@@ -366,7 +372,7 @@ ho {
 
 
 //center menu:
-@media #{$medium-up} { 
+@media #{$medium-up} {
 	nav.top-bar {
 		text-align:center;
 	}
@@ -374,7 +380,7 @@ ho {
 		display: inline-block;
 	}
 }
-	
+
 
 
 
