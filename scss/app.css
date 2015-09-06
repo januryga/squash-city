@@ -1,3 +1,397 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 78, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 99, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 163, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 422, C:/Users/janur/Documents/GitHub/squash-city/scss/normalize.scss */
+td,
+th {
+  padding: 0; }
+
 /* line 364, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.2/"; }
@@ -3806,7 +4200,7 @@ meta.foundation-mq-topbar {
   background: white; }
   /* line 123, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    margin-bottom: 0; }
+    margin-bottom: 0rem; }
 
 /* line 129, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
 .fixed {
@@ -3836,7 +4230,7 @@ meta.foundation-mq-topbar {
   background: white;
   height: 2.8125rem;
   line-height: 2.8125rem;
-  margin-bottom: 0;
+  margin-bottom: 0rem;
   overflow: hidden;
   position: relative; }
   /* line 165, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
@@ -4304,7 +4698,7 @@ meta.foundation-mq-topbar {
   /* line 528, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
     max-width: 62.5rem; }
   /* line 534, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_top-bar.scss */
   .top-bar-section {
@@ -5461,76 +5855,72 @@ blockquote p {
   h6 {
     font-size: 1rem; } }
 
-/* line 56, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 58, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 body a {
   text-decoration: none !important; }
 
-/* line 65, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 67, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .welcome-banner {
   display: block;
   overflow: auto;
   width: 100%;
   min-height: 10rem;
   text-align: center;
-  padding-bottom: 0.85rem;
-  margin-bottom: 0.85rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.95rem;
   background-color: #70bee5;
   /*background-image: url('../img/squash-guy.jpg');
 	background-size:cover;
     background-position: center top;*/ }
-  /* line 80, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 82, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .welcome-banner .welcome-text {
     display: block;
     font-size: 3rem;
     font-weight: 300;
     text-shadow: 0 7px 70px black;
     color: white;
-    margin: 3rem 0; }
+    margin: 3rem 0 3.7rem 0; }
 
-/* line 95, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 99, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .helper-button-wrap a:link, .helper-button-wrap a:visited {
-  color: #70bee5; }
+  color: white; }
 
-/* line 98, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 102, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .helper-button-wrap a:hover {
-  color: #52b0e0; }
-
-/* line 101, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.helper-button-wrap a:active {
-  color: #2fa1d9; }
+  color: #f2f2f2; }
 
 /* line 105, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+.helper-button-wrap a:active {
+  color: #e0e0e0; }
+
+/* line 109, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .helper-button-wrap .helper-button {
-  border-top: 1px solid #bababa;
-  border-right: 1px solid #bababa;
-  border-left: 1px solid #bababa;
-  border-radius: 5px;
-  background: white;
-  overflow: hidden;
-  padding-top: 1.5rem;
+  padding-top: 1.21rem;
   padding-bottom: 0.6rem;
-  margin-top: 1rem;
   white-space: nowrap;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px; }
 
-/* line 117, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 122, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .helper-button-wrap i {
-  font-size: 3rem; }
+  font-size: 2.6rem; }
 
-/* line 120, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 125, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .helper-button-wrap helper-label {
+  font-weight: 300;
   font-size: 1.25rem; }
 
-/* line 131, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 137, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .article-card-wrap .article-card {
   border-top: 1px solid #bababa;
   border-right: 1px solid #bababa;
   border-left: 1px solid #bababa;
-  border-radius: 5px;
+  border-radius: 3px;
   background: white;
   overflow: hidden; }
-  /* line 135, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 141, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .article-card-wrap .article-card img {
     display: block;
     object-fit: cover;
@@ -5538,13 +5928,13 @@ body a {
     width: 100%;
     max-height: 9rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.22); }
-  /* line 145, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 151, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .article-card-wrap .article-card article-title {
     display: block;
     font-size: 1.3rem;
     margin: 0.5rem 1rem; }
 
-/* line 157, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 163, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .location-card {
   border-top: 1px solid #bababa;
   border-right: 1px solid #bababa;
@@ -5552,12 +5942,12 @@ body a {
   border-top: 1px solid rgba(0, 0, 0, 0.22);
   border-right: 1px solid rgba(0, 0, 0, 0.22);
   border-left: 1px solid rgba(0, 0, 0, 0.22);
-  border-radius: 5px;
+  border-radius: 3px;
   background: white;
   overflow: hidden;
   height: 9rem;
   background-color: #70bee5; }
-  /* line 163, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 169, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .location-card .location-name {
     display: block;
     text-align: center;
@@ -5566,15 +5956,7 @@ body a {
     font-weight: 300;
     color: white !important; }
 
-/* line 174, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.location-card.ochota {
-  background-image: url(../img/placeholders/blue-city-bg.jpg); }
-
-/* line 178, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.location-card.targowek {
-  background-image: url(../img/placeholders/targowek-bg.jpg); }
-
-/* line 184, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 182, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .location-accordion {
   margin-bottom: 0;
   margin-left: 0 !important; }
@@ -5585,7 +5967,7 @@ body a {
   /* line 173, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_global.scss */
   .location-accordion:after {
     clear: both; }
-  /* line 189, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 187, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .location-accordion .location-accordion-navigation {
     display: block;
     margin-bottom: 0 !important;
@@ -5605,21 +5987,21 @@ body a {
       /* line 93, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_accordion.scss */
       .location-accordion .location-accordion-navigation > a:hover {
         background: none; }
-    /* line 195, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+    /* line 193, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
     .location-accordion .location-accordion-navigation .content {
       display: none;
       padding: 1rem;
       border-top: 1px solid #bababa;
       border-right: 1px solid #bababa;
       border-left: 1px solid #bababa;
-      border-radius: 5px;
+      border-radius: 3px;
       background: white;
       overflow: hidden; }
       /* line 122, C:/Users/janur/Documents/GitHub/squash-city/scss/foundation/components/_accordion.scss */
       .location-accordion .location-accordion-navigation .content.active {
         background: white;
         display: block; }
-      /* line 198, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+      /* line 196, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
       .location-accordion .location-accordion-navigation .content p {
         font-size: 1.25rem; }
 
@@ -5629,17 +6011,18 @@ body a {
 @media only screen and (min-width:64.0625em) {
 	$profile-size: 8rem;
 }*/
-/* line 217, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 215, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .profile-card {
   border-top: 1px solid #bababa;
   border-right: 1px solid #bababa;
   border-left: 1px solid #bababa;
-  border-radius: 5px;
+  border-radius: 3px;
   background: white;
   overflow: hidden;
+  height: 100%;
   padding: 1.4rem;
   color: black; }
-  /* line 226, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 225, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .profile-card img {
     display: inline-block;
     vertical-align: top;
@@ -5647,93 +6030,93 @@ body a {
     object-fit: cover;
     object-position: center; }
     @media only screen and (min-width: 40.0625em) {
-      /* line 226, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+      /* line 225, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
       .profile-card img {
         width: 8rem;
         height: 8rem;
         border: 2px solid rgba(0, 0, 0, 0.22);
         border-radius: 4rem !important; } }
     @media only screen and (max-width: 40em) {
-      /* line 226, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+      /* line 225, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
       .profile-card img {
         width: 6rem;
         height: 6rem;
         border: 2px solid rgba(0, 0, 0, 0.22);
         border-radius: 3rem !important; } }
-  /* line 244, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 243, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .profile-card .profile-info {
     display: inline-block;
     vertical-align: middle;
     font-size: 2.3rem;
     font-weight: 300; }
-    /* line 252, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+    /* line 251, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
     .profile-card .profile-info a {
       display: block;
       font-weight: 300;
       font-size: 1.6rem; }
-  /* line 261, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 260, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .profile-card p {
     margin-bottom: 0 !important; }
 
-/* line 268, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 267, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .price-table {
   border-top: 1px solid #bababa;
   border-right: 1px solid #bababa;
   border-left: 1px solid #bababa;
-  border-radius: 5px;
+  border-radius: 3px;
   background: white;
   overflow: hidden;
   postion: relative;
   border-collapse: collapse;
   width: 100%; }
-  /* line 275, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 274, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table thead {
     font-weight: 300; }
-    /* line 277, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+    /* line 276, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
     .price-table thead td {
       padding-left: 1rem !important;
       padding-right: 1rem !important; }
-  /* line 283, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 282, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table col {
     border: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 288, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 287, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table tr.hours {
     font-weight: 300;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-    /* line 291, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+    /* line 290, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
     .price-table tr.hours td {
       padding: 0.15rem 0.5rem !important;
       background-color: #f4f4f4;
       border-left: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 298, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 297, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table td {
     font-size: 1.3rem;
     text-align: center !important;
     padding: 0.5rem; }
-  /* line 305, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 304, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table tr.description td {
     padding: 0.4rem 0.8rem 0.1rem 0.8rem;
     font-size: 0.9rem;
     text-align: left !important; }
-  /* line 315, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 314, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table tr.squash-city {
     background-color: #c7e9d4;
     color: #43AC6A; }
-  /* line 320, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 319, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table tr.sport-card {
     background-color: #9bb9ff;
     color: #014cf5; }
-  /* line 326, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 325, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   .price-table tr.gold-squash {
     background-color: #f5db85;
     color: #aa860e; }
 
-/* line 336, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 335, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 ho {
   font-size: 0.9rem !important;
   font-weight: 500; }
   @media only screen and (min-width: 40.0625em) {
-    /* line 341, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+    /* line 340, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
     ho:after {
       vertical-align: super;
       font-size: 60%;
@@ -5741,21 +6124,21 @@ ho {
       margin: 0px 1px;
       content: "00"; } }
 
-/* line 351, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
-.shadow, .helper-button-wrap .helper-button, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card, .price-table {
+/* line 350, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+.shadow, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation .content, .profile-card, .price-table {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.37); }
 
-/* line 355, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+/* line 354, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 365, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 364, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   nav.top-bar {
     text-align: center; }
-  /* line 368, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
+  /* line 367, C:/Users/janur/Documents/GitHub/squash-city/scss/app.scss */
   section.top-bar-section {
     display: inline-block; } }
 

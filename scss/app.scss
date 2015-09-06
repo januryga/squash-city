@@ -1,3 +1,5 @@
+@import "normalize";
+
 @import "_settings";
 
 @import
@@ -16,7 +18,7 @@
 	"foundation/components/type";
 
 //@import "foundation";
-
+//halo
 
 
 
@@ -36,7 +38,7 @@
 		border-left: 1px solid $bordergrey-t;
 	}
 
-	border-radius: 5px;
+	border-radius: 3px;
     background: white;
 	overflow: hidden;
 	@extend .shadow;
@@ -69,8 +71,8 @@ body {
     min-height: 10rem;
 	text-align: center;
 
-	padding-bottom:0.85rem;
-    margin-bottom: 0.85rem;
+	padding-bottom: 1.25rem;
+    margin-bottom: 0.95rem;
 
 	background-color: $niceblue;
 	/*background-image: url('../img/squash-guy.jpg');
@@ -83,7 +85,7 @@ body {
 		font-weight:300;
 		text-shadow: 0 7px 70px rgba(0,0,0,1);
 		color: white;
-		margin: 3rem 0;
+		margin: 3rem 0 3.7rem 0;
 	}
 }
 
@@ -92,32 +94,36 @@ body {
 
 .helper-button-wrap {
 
+	$link-color: white;
+
 	a:link, a:visited {
-		color: $niceblue;
+		color: $link-color;
 	}
 	a:hover {
-		color: darken($niceblue, 7%);
+		color: darken($link-color, 5%);
 	}
 	a:active {
-		color: darken($niceblue, 15%);
+		color: darken($link-color, 12%);
 	}
 
 	.helper-button{
-		@include card;
 
-		padding-top:1.5rem;
+		padding-top:1.21rem;
 		padding-bottom: 0.6rem;
-		margin-top: 1rem;
 
 		white-space:nowrap;
 		text-align: center;
 		text-decoration: none;
+
+		border: 1px solid white;
+		border-radius: 5px;
 	}
 
 	i {
-		font-size: 3rem;
+		font-size: 2.6rem;
 	}
 	helper-label {
+		font-weight: 300;
 		font-size: 1.25rem;
 	}
 
@@ -171,14 +177,6 @@ body {
 	}
 
 }
-.location-card.ochota {
-	background-image: url(../img/placeholders/blue-city-bg.jpg);
-}
-
-.location-card.targowek {
-	background-image: url(../img/placeholders/targowek-bg.jpg);
-}
-
 
 
 .location-accordion {
@@ -219,6 +217,7 @@ body {
 	@include card;
 
 	//max-width:30rem !important;
+	height:100%;
 	padding: 1.4rem;
 	color:black;
 

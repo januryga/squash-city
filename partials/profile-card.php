@@ -2,7 +2,7 @@
 <div class="profile-card">
 
 	<!-- Photo & Name -->
-	<?php the_thumbnail() ?>
+	<?php the_thumbnail(); ?>
 
 	<div class="profile-info">
 		<?php the_name(); ?>

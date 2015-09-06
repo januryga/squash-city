@@ -4,62 +4,36 @@ Template Name: Kontakt
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header() ?>
 
-	<!-- Content -->
+<!-- Content -->
+<div class="row">
+		<div class="small-12 medium-9 large-10 small-centered column">
+			<!-- Profiles -->
+			<ul class="small-block-grid-1
+					   medium-block-grid-1
+					   large-block-grid-2">
 
-	<div class="row">
-		<div class="small-12
-					medium-6
-					large-5 large-offset-1
-					column">
-			<ul class="location-accordion" data-accordion>
-				<li class="location-accordion-navigation">
-					<a href="#ochota-info">
+				<?php
+				$args = array( 'post_type' => 'location');
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+				?>
 
-						<!-- Location Card -->
-						<div class="location-card ochota">
-							<div class="location-name">Ochota</div>
-						</div>
-						<!-- End Location Card -->
-					</a>
-					<div id="ochota-info" class="content">
+				<li>
 
-						<p><i class="mdi mdi-phone"></i> (22) 499 64 66</p>
-						<p><i class="mdi mdi-email"></i> recepcja@squashcity.pl</p>
-						<p><i class="mdi mdi-navigation"></i> Al. Jerozolimskie 179<br>
-						CH Blue City Poziom&nbsp;+4</p>
-						<img src="img/map.png">
-					</div>
+					<?php get_template_part('partials/location-card'); ?>
+
 				</li>
+
+				<?php
+				endwhile;
+				?>
+
+
 			</ul>
-		</div>
-
-
-		<div class="small-12
-					medium-6
-					large-5
-					column end">
-
-			<ul class="location-accordion" data-accordion>
-				<li class="location-accordion-navigation">
-					<a href="#targowek-info">
-
-						<!-- Location Card -->
-						<div class="location-card targowek">
-							<div class="location-name">Targówek</div>
-						</div>
-						<!-- End Location Card -->
-					</a>
-					<div id="targowek-info" class="content">
-						Fajne Korty Dużo Piłek
-					</div>
-				</li>
-			</ul>
-
+			<!-- End Profiles -->
 		</div>
 	</div>
-	<!-- End Content -->
-
 
 <?php get_footer() ?>

@@ -8,7 +8,7 @@ Template Name: Trenerzy
 
 	<!-- Content -->
 	<div class="row">
-		<div class="small-12 medium-9 large-10 center column">
+		<div class="small-12 medium-9 large-10 small-centered column">
 			<!-- Profiles -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
