@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/scss/app.css" type="text/css" media="screen" />
 
 	<!-- Open Sans -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- Material Design Icons -->
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 

@@ -5,8 +5,7 @@
 		<div class="welcome-text">Witaj w Squash&nbsp;City.</div>
 
 		<!-- Helper Buttons -->
-<!--		<div class="row small-collapse medium-uncollapse">-->
-		<div class="row">
+		<div class="row small-collapse medium-uncollapse">
 			<div class="small-4 small-offset-0
 						medium-2 medium-offset-3
 						large-2 large-offset-3

@@ -53,8 +53,8 @@
 }
 
 
-
 body {
+	//padding-bottom: 3rem;
 	a {
 		text-decoration: none !important;
 		//color: $niceblue;
@@ -117,6 +117,10 @@ body {
 
 		border: 1px solid white;
 		border-radius: 5px;
+
+		@media #{$small-only} {
+			margin: 0.5rem;
+		}
 	}
 
 	i {
@@ -336,6 +340,31 @@ body {
 
 }
 
+.footer {
+	width:100%;
+	margin-top: 6rem;
+	padding: 0.5rem;
+
+	font-weight: 300;
+	background-color: #a2a2a2;
+	color: #eaeaea;
+
+	a {
+		float: right;
+		text-decoration: underline !important;
+
+		&:link, &:visited {
+		color: white;
+		}
+		&:hover {
+			color: darken(white, 5%);
+		}
+		&:active {
+			color: darken(white, 12%);
+		}
+	}
+
+}
 
 
 h0 {

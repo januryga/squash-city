@@ -1,12 +1,6 @@
 <?php
 
-
-
-
-	//add the nav menu
-	register_nav_menus( array(
-		'header-menu' => 'Header Menu'
-	) );
+	//META
 
 	//change "active menu item" class from "current-menu-item" to "active"
 	add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
@@ -17,9 +11,22 @@
 		 return $classes;
 	}
 
+	//hide the admin bar
+	add_filter('show_admin_bar', '__return_false');
+
+
+	//add the nav menu
+	register_nav_menus( array(
+		'header-menu' => 'Header Menu'
+	) );
+
+
+
+
+	//POST TYPES
+
 	//add new post type for Profiles
 	add_action( 'init', 'create_profile_type' );
-
 	function create_profile_type() {
 		register_post_type(
 			'profile',
@@ -38,7 +45,6 @@
 
 	//add new post type for Pricing
 	add_action( 'init', 'create_location_type' );
-
 	function create_location_type() {
 		register_post_type(
 			'location',
@@ -58,8 +64,9 @@
 	//add thumbnail support
 	add_theme_support( 'post-thumbnails', array( 'post', 'profile' ) );
 
-	//functions for convenient use of custom fields and thumbnails
 
+
+	//functions for convenient use of custom fields and thumbnails
 	function the_slug() {
 		echo( basename(get_permalink()) );
 	}
