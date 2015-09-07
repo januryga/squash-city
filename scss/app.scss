@@ -18,7 +18,7 @@
 	"foundation/components/type";
 
 //@import "foundation";
-//halo
+
 
 
 
@@ -125,6 +125,12 @@ body {
 	helper-label {
 		font-weight: 300;
 		font-size: 1.25rem;
+		@media #{$medium-only} {
+			font-size: 1.08rem;
+		}
+		@media #{$small-only} {
+			font-size: 1rem;
+		}
 	}
 
 }
@@ -332,6 +338,13 @@ body {
 
 
 
+h0 {
+	display:block;
+	font-size: rem-calc(44);
+	font-weight: 300;
+	margin: 2rem 0 1.5rem 0;
+}
+
 ho {
 	font-size: 0.9rem !important;
 	font-weight:500;
@@ -348,7 +361,7 @@ ho {
 }
 
 .shadow {
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23);
 }
 
 .center {

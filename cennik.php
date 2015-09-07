@@ -10,7 +10,7 @@ Template Name: Cennik
 
 	<div class="row collapse">
 		<div class="small-12 medium-8 large-6 column small-centered">
-
+			<h0>Cennik</h0>
 			<table class="price-table center">
 				<thead>
 					<tr>

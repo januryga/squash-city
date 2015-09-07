@@ -5,10 +5,10 @@ Template Name: Trenerzy
 ?>
 
 <?php get_header(); ?>
-
 	<!-- Content -->
 	<div class="row">
 		<div class="small-12 medium-9 large-10 small-centered column">
+			<h0>Trenerzy</h0>
 			<!-- Profiles -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
