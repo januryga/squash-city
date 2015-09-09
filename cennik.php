@@ -32,49 +32,17 @@ Template Name: Cennik
 						<td><ho>7</ho> - <ho>22</ho></td>
 					</tr>
 
-					<tr class="description">
-						<td colspan="4"><i class="mdi mdi-dumbbell"></i> standardowa cena</td>
-					</tr>
-					<tr>
-						<td>55zł</td>
-						<td>45zł</td>
-						<td>65zł</td>
-						<td>65zł</td>
-					</tr>
+					<?php
+					$args = array( 'post_type' => 'price');
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
 
+						<?php get_template_part('partials/price-card'); ?>
 
-
-					<tr class="description squash-city">
-						<td colspan="4"><i class="mdi mdi-star-circle"></i> z naszą kartą członkowską</td>
-					</tr>
-					<tr class="squash-city">
-						<td>45zł</td>
-						<td>35zł</td>
-						<td>55zł</td>
-						<td>55zł</td>
-					</tr>
-
-
-					<tr class="sport-card description">
-						<td colspan="4"><i class="mdi mdi-heart-box"></i> z kartą SportCard™</td>
-					</tr>
-					<tr class="sport-card">
-						<td>45zł</td>
-						<td>35zł</td>
-						<td>55zł</td>
-						<td>50zł</td>
-					</tr>
-
-
-					<tr class="gold-squash description">
-						<td colspan="4"><i class="mdi mdi-library-plus"></i> z kartą Gold Squash™</td>
-					</tr>
-					<tr class="gold-squash">
-						<td>30zł</td>
-						<td>40zł</td>
-						<td>50zł</td>
-						<td>50zł</td>
-					</tr>
+					<?php
+					endwhile;
+					?>
 
 
 

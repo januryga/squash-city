@@ -319,25 +319,6 @@ body {
 		}
 	}
 
-
-
-	tr.squash-city {
-		background-color: lighten($success-color, 38%);
-		color: $success-color;
-	}
-
-	tr.sport-card {
-		$sport-card-color: #014cf5;
-		background-color: lighten($sport-card-color, 32%);
-		color: $sport-card-color;
-	}
-
-	tr.gold-squash {
-		$gold-squash-color: #aa860e;
-		background-color: lighten($gold-squash-color, 38%);
-		color: $gold-squash-color;
-	}
-
 }
 
 .footer {

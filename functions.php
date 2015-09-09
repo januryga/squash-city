@@ -61,7 +61,24 @@
 
 	}
 
-	//add thumbnail support
+	add_action( 'init', 'create_price_type' );
+	function create_price_type() {
+		register_post_type(
+			'price',
+			array(
+			'labels' => array(
+				'name' => __( 'Prices' ),
+				'singular_name' => __( 'Price' )
+				),
+			'public' => true,
+			'has_archive' => false,
+			'supports' => array( 'title', 'editor', 'week1', 'week2', 'week3', 'weekend', 'color' ),
+			)
+		);
+
+	}
+
+	//add thumbnail support for posts
 	add_theme_support( 'post-thumbnails', array( 'post', 'profile' ) );
 
 
@@ -97,6 +114,10 @@
 
 	function the_thumbnail() {
 		echo get_the_post_thumbnail();
+	}
+
+	function the($my_field) {
+		echo the_field($my_field);
 	}
 
 ?>
