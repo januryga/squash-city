@@ -37,7 +37,7 @@
 				),
 			'public' => true,
 			'has_archive' => false,
-			'supports' => array( 'title', 'editor', 'thumbnail', 'name', 'phone' ),
+			'supports' => array( 'title', 'editor', 'thumbnail', 'phone' ),
 			)
 		);
 
@@ -86,10 +86,6 @@
 	//functions for convenient use of custom fields and thumbnails
 	function the_slug() {
 		echo( basename(get_permalink()) );
-	}
-
-	function the_name() {
-		echo the_field('name');
 	}
 
 	function the_phone() {

@@ -5,7 +5,7 @@
 	<?php the_thumbnail(); ?>
 
 	<div class="profile-info">
-		<?php the_name(); ?>
+		<?php the_title(); ?>
 		<a href="tel:<?php the_phone(); ?>">
 			<i class="mdi mdi-phone"></i> <?php the_phone(); ?>
 		</a>
