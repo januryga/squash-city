@@ -15,6 +15,12 @@
 	<!-- Material Design Icons -->
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 
+
+
+    <!-- Masonry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+
+    <!-- Modernizr -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr.js"></script>
 
 	<?php wp_head(); ?>
