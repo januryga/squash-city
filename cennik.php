@@ -13,65 +13,47 @@ Template Name: Cennik
 			<h0>Cenniki</h0>
 
             <ul class="tabs" data-tab>
-                <li class="tab-title active"><a href="#panel1">Tab 1</a></li>
-                <li class="tab-title"><a href="#panel2">Tab 2</a></li>
-                <li class="tab-title"><a href="#panel3">Tab 3</a></li>
-                <li class="tab-title"><a href="#panel4">Tab 4</a></li>
+
+                <?php
+				$args = array( 'post_type' => 'price');
+				$name_loop = new WP_Query( $args );
+                $counter = 1;
+
+				while ( $name_loop->have_posts() ) : $name_loop->the_post();
+                ?>
+
+					<li class="tab-title <?php activate_first() ?>"> <!-- add "active" to select -->
+                        <a href="#<?php the_slug() ?>"><?php the_title() ?></a>
+                    </li>
+
+				<?php
+				endwhile;
+                wp_reset_postdata();
+				?>
             </ul>
+
             <div class="tabs-content">
-                <div class="content active" id="panel1">
-                    <p>This is the first panel of the basic tab example. You can place all sorts of content here including a grid.</p>
-                </div>
-                <div class="content" id="panel2">
-                    <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-                </div>
-                <div class="content" id="panel3">
-                    <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-                </div>
-                <div class="content" id="panel4">
-                    <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-                </div>
+
+                <?php
+				$args = array( 'post_type' => 'price');
+				$content_loop = new WP_Query( $args );
+                $counter = 1;
+
+				while ( $content_loop->have_posts() ) : $content_loop->the_post();
+				?>
+
+					<div class="content <?php activate_first() ?>" id="<?php the_slug() ?>"> <!-- add class "active" to select? why?-->
+                        <?php get_template_part('partials/price-table'); ?>
+
+                    </div>
+
+				<?php
+				endwhile;
+                wp_reset_postdata();
+				?>
             </div>
 
-			<table class="price-table center">
-				<thead>
-					<tr>
-						<td colspan="3">Poniedziałek - Piątek</td>
-						<td>Weekend</td>
-					</tr>
-				</thead>
-				<tbody>
 
-					<col>
-					<col>
-					<col>
-					<col>
-
-					<tr class="hours">
-						<td><ho>7</ho> - <ho>9</ho></td>
-						<td><ho>10</ho> - <ho>16</ho></td>
-						<td><ho>17</ho> - <ho>23</ho></td>
-						<td><ho>7</ho> - <ho>22</ho></td>
-					</tr>
-
-					<?php
-					$args = array( 'post_type' => 'price');
-					$loop = new WP_Query( $args );
-					while ( $loop->have_posts() ) : $loop->the_post();
-
-						get_template_part('partials/price-card');
-
-					endwhile;
-
-                    wp_reset_postdata();
-					?>
-
-
-
-
-
-				</tbody>
-			</table>
 
 		</div>
 	</div>

@@ -74,7 +74,7 @@
 			'public' => true,
 			'has_archive' => false,
 			//'supports' => array( 'tier', 'name', 'color', 'week1', 'week2', 'week3', 'weekend' ),
-            'supports' => array( 'title', 'tier' )
+            'supports' => array( 'title', 'tier', 'extra' )
 			)
 		);
 
@@ -83,6 +83,15 @@
 	//add thumbnail support for posts
 	add_theme_support( 'post-thumbnails', array( 'post', 'profile' ) );
 
+
+    //add "active" if the current post is the first (used in cennik - tabs)
+    function activate_first() {
+        global $counter;
+        if($counter == 1):
+            echo "active";
+        endif;
+        $counter++;
+    }
 
 
 	//functions for convenient use of custom fields and thumbnails
