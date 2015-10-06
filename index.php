@@ -73,13 +73,15 @@
 					small-centered column">
 			<ul class="small-block-grid-1
 					   medium-block-grid-2
-					   large-block-grid-3">
+					   large-block-grid-3
+                       js-masonry"
+                data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
 
 				<?php $query = new WP_Query( 'category_name=news' ); ?>
  				<?php: while ( $query->have_posts() ) : $query->the_post(); ?>
 
-					<li>
+					<li class="masonry-item">
 
 						<?php get_template_part('partials/article-card'); ?>
 

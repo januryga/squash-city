@@ -18,8 +18,8 @@ if( have_rows('tier') ):
     <?php
     endwhile;
 
-else :
-
+else:
+    echo "Eroor displaying pricing (not found in database)";
     // no rows found
 
 endif;

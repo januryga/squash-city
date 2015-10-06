@@ -12,7 +12,9 @@ Template Name: Trenerzy
 			<!-- Profiles -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
-					   large-block-grid-2">
+					   large-block-grid-2
+                       js-masonry"
+                data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
 				<?php
 				$args = array( 'post_type' => 'profile');
@@ -20,7 +22,7 @@ Template Name: Trenerzy
 				while ( $loop->have_posts() ) : $loop->the_post();
 				?>
 
-				<li>
+				<li class="masonry-item">
 
 					<?php get_template_part('partials/profile-card'); ?>
 
