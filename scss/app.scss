@@ -1,3 +1,5 @@
+@import "normalize";
+
 @import "_settings";
 
 @import
@@ -36,7 +38,7 @@
 		border-left: 1px solid $bordergrey-t;
 	}
 
-	border-radius: 5px;
+	border-radius: 3px;
     background: white;
 	overflow: hidden;
 	@extend .shadow;
@@ -51,8 +53,8 @@
 }
 
 
-
 body {
+	//padding-bottom: 3rem;
 	a {
 		text-decoration: none !important;
 		//color: $niceblue;
@@ -62,34 +64,28 @@ body {
 
 
 
-
-logo {
-	font-size:2.5em;
-	line-height:1em;
-	display:none;
-}
 .welcome-banner {
 	display:block;
+	overflow:auto;
 	width: 100%;
     min-height: 10rem;
 	text-align: center;
 
-	padding-top:1rem;
-	padding-bottom:0.85rem;
-    margin-bottom: 0.85rem;
-	
+	padding-bottom: 1.25rem;
+    margin-bottom: 0.95rem;
+
 	background-color: $niceblue;
-	background-image: url('../img/squash-guy.jpg');
+	/*background-image: url('../img/squash-guy.jpg');
 	background-size:cover;
-    background-position: center top;
-	
+    background-position: center top;*/
+
 	.welcome-text {
 		display:block;
 		font-size: 3rem;
 		font-weight:300;
 		text-shadow: 0 7px 70px rgba(0,0,0,1);
 		color: white;
-		margin: 3rem 0;
+		margin: 3rem 0 3.7rem 0;
 	}
 }
 
@@ -97,34 +93,48 @@ logo {
 
 
 .helper-button-wrap {
-	
+
+	$link-color: white;
+
 	a:link, a:visited {
-		color: $niceblue;
+		color: $link-color;
 	}
 	a:hover {
-		color: darken($niceblue, 7%);
+		color: darken($link-color, 5%);
 	}
 	a:active {
-		color: darken($niceblue, 15%);
+		color: darken($link-color, 12%);
 	}
-	
-	.helper-button{
-		@include card;
 
-		padding-top:1.5rem;
+	.helper-button{
+
+		padding-top:1.21rem;
 		padding-bottom: 0.6rem;
-		margin-top: 1rem;
 
 		white-space:nowrap;
 		text-align: center;
 		text-decoration: none;
+
+		border: 1px solid white;
+		border-radius: 5px;
+
+		@media #{$small-only} {
+			margin: 0.5rem;
+		}
 	}
-	
-	i { 
-		font-size: 3rem;
+
+	i {
+		font-size: 2.6rem;
 	}
 	helper-label {
+		font-weight: 300;
 		font-size: 1.25rem;
+		@media #{$medium-only} {
+			font-size: 1.08rem;
+		}
+		@media #{$small-only} {
+			font-size: 1rem;
+		}
 	}
 
 }
@@ -133,16 +143,16 @@ logo {
 
 
 .article-card-wrap {
-	
+
 	.article-card {
 
 		@include card();
-		
+
 		img {
 			display:block;
 			object-fit:cover;
 			object-position:center;
-			
+
 			width:100%;
 			max-height:9rem;
 			border-bottom: 1px solid $bordergrey-t;
@@ -164,26 +174,19 @@ logo {
 
 	@include card($border-transp:true);
 	height:9rem;
+	background-color: $niceblue;
 
 	.location-name {
 
 		display: block;
+		text-align:center;
+		margin-top: 2rem;
 		font-size: 3rem;
 		font-weight: 300;
 		color: white !important;
-		text-align:center;
-		margin-top: 2rem;
 	}
 
 }
-.location-card.ochota {
-	background-image: url(../img/placeholders/blue-city-bg.jpg);
-}
-
-.location-card.targowek {
-	background-image: url(../img/placeholders/targowek-bg.jpg);
-}
-
 
 
 .location-accordion {
@@ -213,7 +216,7 @@ logo {
 /*@media (#{$small}) or (#{$medium}) {
 	$profile-size: 6rem;
 }
-@media #{$large-up} { 
+@media #{$large-up} {
 	$profile-size: 8rem;
 }*/
 
@@ -224,42 +227,46 @@ logo {
 	@include card;
 
 	//max-width:30rem !important;
-	padding: 1.4rem;
+	height:100%;
+	padding: 1rem;
 	color:black;
 
 
 	img {
-
 		display:inline-block;
 		vertical-align: top;
 		background: none !important;
 		object-fit:cover;
 		object-position:center;
 
+		margin-right:0.7rem;
+		margin-bottom:1rem;
 
-		@media #{$medium-up} {
-			@include round($size: 8rem);
-		}
 		@media #{$small-only} {
 			@include round($size: 6rem);
 		}
-
+		@media #{$medium-up} {
+			@include round($size: 8rem);
+		}
 	}
 
 	.profile-info {
 		display: inline-block;
 		vertical-align:middle;
 
-		//margin-top:0.6rem;
-		font-size: 2.3rem;
+		font-size: 2.1rem;
+		@media #{$small-only} { font-size: 1.5rem; }
+
 		font-weight: 300;
 
+
 		a {
-		//margin-top:-0.5rem !important;
-		display:block;
-		font-weight:300;
-		font-size:1.6rem;
-		//border-bottom: 2px solid $niceblue;
+			//margin-top:-0.5rem !important;
+			display:block;
+			font-weight:300;
+
+			font-size:1.6rem;
+			@media #{$small-only} { font-size: 1.1rem; }
 		}
 	}
 
@@ -315,34 +322,47 @@ logo {
 		}
 	}
 
+}
 
+.footer {
+	width:100%;
+	margin-top: 6rem;
+	padding: 0.5rem;
 
-	tr.squash-city {
-		background-color: lighten($success-color, 38%);
-		color: $success-color;
-	}
+	font-weight: 300;
+	background-color: #a2a2a2;
+	color: #eaeaea;
 
-	tr.sport-card {
-		$sport-card-color: #014cf5;
-		background-color: lighten($sport-card-color, 32%);
-		color: $sport-card-color;
-	}
+	a {
+		float: right;
+		text-decoration: underline !important;
 
-	tr.gold-squash {
-		$gold-squash-color: #aa860e;
-		background-color: lighten($gold-squash-color, 38%);
-		color: $gold-squash-color;
+		&:link, &:visited {
+		color: white;
+		}
+		&:hover {
+			color: darken(white, 5%);
+		}
+		&:active {
+			color: darken(white, 12%);
+		}
 	}
 
 }
 
 
+h0 {
+	display:block;
+	font-size: rem-calc(44);
+	font-weight: 300;
+	margin: 2rem 0 1.5rem 0;
+}
 
 ho {
 	font-size: 0.9rem !important;
 	font-weight:500;
 
-	@media #{$small-only} {
+	@media #{$medium-up} {
 		&:after{
 			vertical-align: super;
 			font-size:60%;
@@ -354,7 +374,7 @@ ho {
 }
 
 .shadow {
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23);
 }
 
 .center {
@@ -366,7 +386,7 @@ ho {
 
 
 //center menu:
-@media #{$medium-up} { 
+@media #{$medium-up} {
 	nav.top-bar {
 		text-align:center;
 	}
@@ -374,7 +394,7 @@ ho {
 		display: inline-block;
 	}
 }
-	
+
 
 
 

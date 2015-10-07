@@ -1,8 +1,14 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+/* AUTHOR */
+	Design & Coding: Jan Uryga
+	Facebook: fb.com/januryga
+	From: Warsaw, Poland
+
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+	Language: Polish
+	Standards: HTML5, CSS3
+	Components: jQuery, Orbit, Reveal
+	Software: Brackets, Git
+	Framework: Foundation
+	
+	/* Written in SCSS. */ 

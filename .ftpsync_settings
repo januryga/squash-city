@@ -1,1 +1,1 @@
-{"connect":"FTP","host":"ftp.squashcity.kylos.pl","port":"21","user":"squashci","remoteRoot":"public_html","pwd":"fajnehaslo1","savepwd":"checked"}
+{"connect":"FTP","host":"ftp.squashcity.kylos.pl","port":"21","user":"squashci","remoteRoot":"public_html/wp-content/themes/squash-city","pwd":"fajnehaslo1","savepwd":"checked"}
