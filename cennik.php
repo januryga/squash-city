@@ -44,6 +44,9 @@ Template Name: Cennik
 
 					<div class="content <?php activate_first() ?>" id="<?php the_slug() ?>"> <!-- add class "active" to select? why?-->
                         <?php get_template_part('partials/price-table'); ?>
+                        
+                        <h3>Dodatkowe usługi</h3>
+                        <?php get_template_part('partials/extra-table'); ?>
 
                     </div>
 
@@ -52,7 +55,9 @@ Template Name: Cennik
                 wp_reset_postdata();
 				?>
             </div>
-
+            
+            
+            
 
 
 		</div>

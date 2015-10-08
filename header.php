@@ -23,7 +23,6 @@
     <!-- Modernizr -->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr.js"></script>
 
-	<?php wp_head(); ?>
 </head>
 <body>
 <?php get_template_part('navbar') ?>
