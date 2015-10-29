@@ -100,15 +100,15 @@
 	}
 
 	function the_phone() {
-		echo the_field('phone');
+		echo '<i class="mdi mdi-phone"></i> ', the_field('phone');
 	}
 
 	function the_email() {
-		echo the_field('email');
+		echo '<i class="mdi mdi-email"></i>  ', the_field('email');
 	}
 
 	function the_address() {
-		echo the_field('address');
+		echo '<i class="mdi mdi-navigation"></i> ', the_field('address');
 	}
 
 	function the_background() {

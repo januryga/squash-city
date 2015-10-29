@@ -17,7 +17,9 @@ Template Name: Trenerzy
                 data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
 				<?php
-				$args = array( 'post_type' => 'profile');
+                //sort posts alphabetically:
+				$args = array( 'post_type' => 'profile', 'orderby'=> 'title', 'order' => 'ASC');
+
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
 				?>

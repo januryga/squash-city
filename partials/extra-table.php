@@ -24,7 +24,7 @@
             endwhile;
 
         else:
-            echo "Eroor displaying pricing (not found in database)";
+            echo "Error displaying pricing (not found in database)";
             // no rows found
 
         endif;

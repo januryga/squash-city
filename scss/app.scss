@@ -345,16 +345,15 @@ body {
 .thumbnail-placeholder {
     position: relative;
     display:block;
-    width: 300px;
+    width: 100%;
     height: 200px;
     background-color: #c1c1c1; 
     text-align:center;
     i {
         display: inline-block !important;
+        vertical-align: middle;
         color: rgba(0, 0, 0, 0.15);
         font-size: 6rem;
-        
-
     }
 }
 
