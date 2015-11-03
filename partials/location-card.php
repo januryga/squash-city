@@ -9,10 +9,13 @@
 			<!-- End Location Card -->
 		</a>
 		<div id="<?php the_slug() ?>" class="content">
-			<p><?php the_phone() ?></p>
-			<p><?php the_email() ?></p>
-			<p><?php the_address() ?></p>
-			<p><?php the_map() ?></p>
+			<p><i class="mdi mdi-phone"></i> <?php the_phone() ?></p>
+			<p><i class="mdi mdi-email"></i> <?php the_email() ?></p>
+			<p><i class="mdi mdi-navigation"></i> <?php the_address() ?></p>
+
+<!--			<p><?php the_map() ?></p>-->
+                <?php get_template_part("partials/location-maps"); ?>
+
 		</div>
 	</li>
 </ul>

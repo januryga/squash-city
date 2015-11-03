@@ -17,8 +17,27 @@ if( have_rows('tier') ):
         </tr>
 
         <?php 
-        if( get_sub_field('space') )
-            echo '<tr style="border:0; background-color:rgba(0, 0, 0, 0) !important;"><td style="border:0; background-color:rgba(0, 0, 0, 0) !important;">', PHP_EOL, '</td></tr>';
+        if( get_sub_field('space') ){
+            //echo "<tr><td></td></tr>";
+            $make_space = '
+                </tbody>
+            </table>
+            <table class="price-table">
+                <col>
+                <col>
+                <col>
+                <col>
+
+                <thead style="visibility:hidden;">
+                    <tr>
+                        <td colspan="3">Poniedziałek - Piątek</td>
+                        <td>Weekend</td>
+                    </tr>
+                </thead>
+                <tbody>
+            ';
+            echo $make_space;
+        }
         ?>
 
     <?php

@@ -13,7 +13,7 @@
 
 				<!-- Button -->
 				<div class="helper-button-wrap">
-					<a href="http://squashcity.kylos.pl/rezerwacja">
+					<a href="<?php echo home_url() ?>/rezerwacja">
 						<div class="helper-button">
 							<i class="mdi mdi-large mdi-calendar-plus"></i>
 							<br>
@@ -46,7 +46,7 @@
 
 				<!-- Button -->
 				<div class="helper-button-wrap">
-					<a href="http://squashcity.kylos.pl/kontakt">
+					<a href="<?php echo home_url() ?>/kontakt">
 						<div class="helper-button">
 							<i class="mdi mdi-large mdi-navigation"></i>
 							<br>

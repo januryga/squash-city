@@ -26,7 +26,7 @@
 
 
 @mixin card($margin: false, $border: true, $border-transp:false) {
-	@if $margin { margin: 1rem 0rem; }
+	/*@if $margin { margin: 1rem 0rem; }
 	@if $border {
 		border-top: 1px solid $bordergrey;
 		border-right: 1px solid $bordergrey;
@@ -38,8 +38,8 @@
 		border-right: 1px solid $bordergrey-t;
 		border-left: 1px solid $bordergrey-t;
 	}
-
-	border-radius: 3px;
+    */
+	border-radius: 2px;
     background: white;
 	overflow: hidden;
 	@extend .shadow;
@@ -109,10 +109,10 @@ body {
 
 	.helper-button{
 
-		padding-top:1.21rem;
+		padding-top: 1.21rem;
 		padding-bottom: 0.6rem;
 
-		white-space:nowrap;
+		white-space: nowrap;
 		text-align: center;
 		text-decoration: none;
 
@@ -201,7 +201,7 @@ body {
 			$padding: 0rem, $active_class: 'active', $font-size: 10rem !important);
 		margin: 1rem 0;
 
-		.content {
+		& > .content {
 			@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
 			@include card;
 			p {
@@ -281,10 +281,13 @@ body {
 .price-table {
 	@include card;
 
-	postion: relative;
+	position: relative;
 	border-collapse: collapse;
 	width:100%;
-    margin-bottom: 1.5rem;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    //margin-bottom: 1.5rem;
 
 	thead {
 		font-weight: 300;
@@ -309,13 +312,8 @@ body {
 		}
 	}
 
-	td {
-		font-size: 1.3rem;
-		text-align:center !important;
-		padding: 0.5rem;
-	}
 
-	tr.description {
+    tr.description {
 		td {
 			padding: 0.4rem 0.8rem 0.1rem 0.8rem;
 			font-size: 0.9rem;
@@ -324,12 +322,19 @@ body {
 		}
 	}
 
+	td {
+		font-size: 1.3rem;
+		text-align:center !important;
+		padding: 0.5rem;
+	}
+
 }
 
 .article {
-    //margin-top: 2rem;
+    @include card;
+    margin-top: 2.5rem;
     h2 {
-        margin-bottom:1rem;
+        margin-bottom:2rem;
     }
     .body {
         padding: 2rem !important;
@@ -343,15 +348,13 @@ body {
 }
 
 .thumbnail-placeholder {
-    position: relative;
     display:block;
-    width: 100%;
-    height: 200px;
     background-color: #c1c1c1; 
     text-align:center;
+    overflow:auto;
     i {
-        display: inline-block !important;
-        vertical-align: middle;
+        margin: 3rem;
+        display: block;
         color: rgba(0, 0, 0, 0.15);
         font-size: 6rem;
     }
