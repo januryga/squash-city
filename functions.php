@@ -95,6 +95,10 @@
     }
 
 
+    function stylesheet_url() {
+        echo get_stylesheet_directory_uri();
+    }
+
 	//functions for convenient use of custom fields and thumbnails
 	function the_slug() {
 		echo( basename(get_permalink()) );

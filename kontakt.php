@@ -16,6 +16,7 @@ Template Name: Kontakt
 					   large-block-grid-2">
 
 				<?php
+                $post_num = 1;
 				$args = array( 'post_type' => 'location');
 				$loop = new WP_Query( $args );
 				while ( $loop->have_posts() ) : $loop->the_post();
@@ -28,6 +29,7 @@ Template Name: Kontakt
 				</li>
 
 				<?php
+                    $post_num++;
 				endwhile;
 				?>
 
