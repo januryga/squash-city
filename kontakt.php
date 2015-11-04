@@ -10,6 +10,7 @@ Template Name: Kontakt
 <div class="row">
 		<div class="small-12 medium-9 large-10 small-centered column">
 			<h0>Kontakt</h0>
+            <div class="reset_maps">Reset maps</div>
 			<!-- Profiles -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1

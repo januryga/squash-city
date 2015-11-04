@@ -1,3 +1,27 @@
+/*
+This script handles:
+- Creation of google map
+- Adding markers
+- Keeping center coordinates when
+  map size changes
+- Redisplaying the map when an the
+  map's parent Accordion element
+  is opened (resetMap).
+  Done via triggering "resize":
+  google.maps.event.trigger(map, 'resize');
+
+
+This is a modified version of:
+http://stackoverflow.com/questions/23880730/google-maps-in-zurb-foundation-not-re-centering-on-toggle
+With Duncan's comments applied + Trigger when an accordion is clicked (line 77).
+
+^ The above script is based on:
+http://www.advancedcustomfields.com/resources/google-map/
+
+The event handler on line 77 is taken from:
+http://foundation.zurb.com/docs/components/accordion.html
+*/
+
 (function($) {
 
 /*
@@ -47,15 +71,14 @@ function resetMap(map){
     google.maps.event.trigger(map, 'resize');
     map.setZoom(zoom);
     map.setCenter(center);
-    console.log(map);
 };
 
-$('.location-accordion-navigation').click(function (e) {
-    setTimeout(resetMap(map), 100);
-    //console.log(map);
+
+$('.location-accordion').on('toggled', function(event, accordion){
+    resetMap(map);
 });
 
-$(document).ready(setTimeout(resetMap(map), 100));
+
 }
 
  /*
@@ -154,7 +177,8 @@ $(document).ready(function(){
         render_map( $(this) );
      });
 
-
 });
+
+
 
 })(jQuery);

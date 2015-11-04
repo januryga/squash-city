@@ -13,7 +13,7 @@
 		<script src="<?php stylesheet_url() ?>/js/vendor/fastclick.js"></script>
 
 		<script src="<?php stylesheet_url() ?>/js/foundation.min.js"></script>
-		<script src="<?php stylesheet_url() ?>/js/app.js"></script>
+        <!-- <script src="<?php stylesheet_url() ?>/js/app.js"></script> -->
 
 
 		<script>
@@ -21,16 +21,10 @@
 		</script>
 		<!-- End Foundation Scripts -->
 
-
+        <!-- These should be loaded with Enqueue Script: -->
         <!-- Advanced Custom Fields - Google Maps Embed -->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script src="<?php stylesheet_url() ?>/components/acf-map/acf-map-script.js"></script>
-
-        <script>
-            //o co chodzi
-			/*$(document).foundation();
-            $(document).foundation('accordion', 'reflow');*/
-		</script>
 
 	</foot>
 	<!-- End Footer -->

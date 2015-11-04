@@ -1,15 +1,12 @@
 <?php global $post_num; ?>
-<?php get_template_part("components/acf-map/acf-map"); ?>
 <ul class="tabs" data-tab>
 
     <!-- Google Maps tab nav:-->
-<!--
     <li class="tab-title active">
         <a href="#map<?php echo "$post_num-1" ?>">Dojazd</a>
     </li>
--->
 
-    <!-- Extra tabs nav loop: -->
+    <!-- Extra Maps tabs nav loop: -->
     <?php
     if (have_rows('extra_maps')):
         $row_num = 2;
@@ -29,14 +26,12 @@
 
 
     <div class="tabs-content">
-<!--
-         Google Maps content:
+        <!-- Google Maps content:-->
         <div class="content active" id="map<?php echo "$post_num-1" ?>">
             <?php get_template_part("components/acf-map/acf-map"); ?>
         </div>
--->
 
-        <!-- Extra tabs content loop: -->
+        <!-- Extra Maps tabs content loop: -->
          <?php
         $row_num = 2;
         while ( have_rows('extra_maps') ) : the_row();
