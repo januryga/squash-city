@@ -15,6 +15,7 @@
 	"foundation/components/split-buttons",
 	"foundation/components/top-bar",
 	"foundation/components/visibility",
+    "foundation/components/tabs",
 	"foundation/components/type";
 
 //@import "foundation";
@@ -24,22 +25,13 @@
 
 
 
-@mixin card($margin: false, $border: true, $border-transp:false) {
-	@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
+@mixin card($no_bg: false) {
 
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
+    @if not $no_bg {
+        background: white;
+    }
 
-	border-radius: 3px;
-    background: white;
+	border-radius: 2px;
 	overflow: hidden;
 	@extend .shadow;
 }
@@ -108,10 +100,10 @@ body {
 
 	.helper-button{
 
-		padding-top:1.21rem;
+		padding-top: 1.21rem;
 		padding-bottom: 0.6rem;
 
-		white-space:nowrap;
+		white-space: nowrap;
 		text-align: center;
 		text-decoration: none;
 
@@ -172,7 +164,7 @@ body {
 
 .location-card {
 
-	@include card($border-transp:true);
+	@include card();
 	height:9rem;
 	background-color: $niceblue;
 
@@ -200,7 +192,7 @@ body {
 			$padding: 0rem, $active_class: 'active', $font-size: 10rem !important);
 		margin: 1rem 0;
 
-		.content {
+		& > .content {
 			@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
 			@include card;
 			p {
@@ -278,32 +270,53 @@ body {
 
 
 .price-table {
-	@include card;
+	@include card($no_bg: true);
+    table-layout:fixed;
 
-	postion: relative;
+	position: relative;
 	border-collapse: collapse;
 	width:100%;
 
-	thead {
-		font-weight: 300;
-		td {
-			padding-left: 1rem !important;
-			padding-right: 1rem !important;
-		}
-	}
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
 
-	col {
-		border: 1px solid $bordergrey-t5;
-	}
-	//use nth-child to make thicken border between Pon-Pt. And Weekend
+
+    th {
+        background-color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0.5rem 1rem !important;
+    }
 
 	tr.hours {
 		font-weight: 300;
 		border-bottom: 1px solid $bordergrey-t12;
-		td {
+		th {
 			padding:0.15rem 0.5rem !important;
 			background-color: $lightgrey;
-			border-left: 1px solid $bordergrey-t5;
+			border-right: 1px solid $bordergrey-t5;
+		}
+	}
+
+	col {
+		border-right: 1px solid $bordergrey-t5;
+	}
+    col:nth-last-child(1) {
+        width: 30%;
+        border-right: 0;
+        border-left: 2px solid $bordergrey-t5;
+    }
+	//use nth-child to make thicken border between Pon-Pt. And Weekend
+
+
+
+
+    tr.description {
+		td {
+			padding: 0.4rem 0.8rem 0.1rem 0.8rem;
+			font-size: 0.9rem;
+			text-align: left !important;
+			//background-color:rgba(0, 0, 0, 0.03);
 		}
 	}
 
@@ -313,15 +326,59 @@ body {
 		padding: 0.5rem;
 	}
 
-	tr.description {
-		td {
-			padding: 0.4rem 0.8rem 0.1rem 0.8rem;
-			font-size: 0.9rem;
-			text-align: left !important;
-			//background-color:rgba(0, 0, 0, 0.03);
-		}
+}
+
+.extra-table{
+    @include card;
+	border-collapse: collapse;
+	width:100%;
+
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+
+    col {
+		border: 1px solid $bordergrey-t5;
 	}
 
+    tr:nth-child(even) {
+        background-color: $silver;
+    }
+
+    td {
+		font-size: 1.3rem;
+		//text-align:left !important;
+		padding: 1rem;
+	}
+}
+
+.article {
+    @include card;
+    margin-top: 2.5rem;
+    h2 {
+        margin-bottom:2rem;
+    }
+    .body {
+        padding: 2rem !important;
+        background-color: white;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.thumbnail-placeholder {
+    display:block;
+    background-color: #c1c1c1; 
+    text-align:center;
+    overflow:auto;
+    i {
+        margin: 3rem;
+        display: block;
+        color: rgba(0, 0, 0, 0.15);
+        font-size: 6rem;
+    }
 }
 
 .footer {

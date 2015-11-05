@@ -6,7 +6,7 @@
 	add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 	function special_nav_class($classes, $item){
 		 if( in_array('current-menu-item', $classes) ){
-				 $classes[] = 'active ';
+             $classes[] = 'active ';
 		 }
 		 return $classes;
 	}
@@ -43,7 +43,7 @@
 
 	}
 
-	//add new post type for Pricing
+	//add new post type for Location
 	add_action( 'init', 'create_location_type' );
 	function create_location_type() {
 		register_post_type(
@@ -61,6 +61,7 @@
 
 	}
 
+    //add new post type for Pricing
 	add_action( 'init', 'create_price_type' );
 	function create_price_type() {
 		register_post_type(
@@ -72,7 +73,8 @@
 				),
 			'public' => true,
 			'has_archive' => false,
-			'supports' => array( 'title', 'editor', 'week1', 'week2', 'week3', 'weekend', 'color' ),
+			//'supports' => array( 'tier', 'name', 'color', 'week1', 'week2', 'week3', 'weekend' ),
+            'supports' => array( 'title', 'tier', 'extra' )
 			)
 		);
 
@@ -82,6 +84,20 @@
 	add_theme_support( 'post-thumbnails', array( 'post', 'profile' ) );
 
 
+    //add "active" if the current post is the first (used in cennik - tabs)
+    function activate_first() {
+        global $counter;
+        if($counter == 1):
+            echo "active";
+        endif;
+        echo " $counter";
+        $counter++;
+    }
+
+
+    function stylesheet_url() {
+        echo get_stylesheet_directory_uri();
+    }
 
 	//functions for convenient use of custom fields and thumbnails
 	function the_slug() {

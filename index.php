@@ -13,7 +13,7 @@
 
 				<!-- Button -->
 				<div class="helper-button-wrap">
-					<a href="http://squashcity.kylos.pl/rezerwacja">
+					<a href="<?php echo home_url() ?>/rezerwacja">
 						<div class="helper-button">
 							<i class="mdi mdi-large mdi-calendar-plus"></i>
 							<br>
@@ -46,7 +46,7 @@
 
 				<!-- Button -->
 				<div class="helper-button-wrap">
-					<a href="http://squashcity.kylos.pl/kontakt">
+					<a href="<?php echo home_url() ?>/kontakt">
 						<div class="helper-button">
 							<i class="mdi mdi-large mdi-navigation"></i>
 							<br>
@@ -73,20 +73,23 @@
 					small-centered column">
 			<ul class="small-block-grid-1
 					   medium-block-grid-2
-					   large-block-grid-3">
+					   large-block-grid-2
+                       js-masonry"
+                data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
 
-				<?php $query = new WP_Query( 'category_name=news' ); ?>
- 				<?php: while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php $loop = new WP_Query( 'category_name=news' ); ?>
+<?php: while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<li>
+
+					<li class="masonry-item">
 
 						<?php get_template_part('partials/article-card'); ?>
 
 					</li>
 
-				<?php endwhile;
- 				wp_reset_postdata(); ?>
+<?php endwhile;
+wp_reset_postdata(); ?>
 
 			</ul>
 		</div>

@@ -1,15 +1,24 @@
 <?php get_header() ?>
 
-<div class="row">
-	<div class="small-12 medium-9 large-7 small-centered column">
-		<!--Post Content-->
-		<?php while ( have_posts() ) : the_post(); ?>
-			<h3><?php  the_title() ?></h3>
-			<?php the_content() ?>
-		<?php endwhile; ?>
-		<!--End Post Content -->
-	</div>
+<?php while ( have_posts() ) : the_post(); ?>
 
+
+<div class="row small-collapse">
+    <div class="article small-12 medium-10 large-8 small-centered column">
+        <?php the_post_thumbnail( 'full' ); ?>
+        <div class="body">
+            <!--Post Content-->
+
+            <h2><?php the_title() ?></h2>
+
+                <?php the_content() ?>
+
+            <!--End Post Content -->
+        </div>
+    </div>
 </div>
+
+
+<?php endwhile; ?>
 
 <?php get_footer() ?>

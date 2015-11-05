@@ -12,23 +12,27 @@ Template Name: Trenerzy
 			<!-- Profiles -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
-					   large-block-grid-2">
+					   large-block-grid-2
+                       js-masonry"
+                data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
-				<?php
-				$args = array( 'post_type' => 'profile');
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post();
-				?>
+<?php
+//sort posts alphabetically:
+$args = array( 'post_type' => 'profile', 'orderby'=> 'title', 'order' => 'ASC');
 
-				<li>
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post();
+?>
+
+				<li class="masonry-item">
 
 					<?php get_template_part('partials/profile-card'); ?>
 
 				</li>
 
-				<?php
-				endwhile;
-				?>
+<?php
+endwhile;
+?>
 
 
 			</ul>
