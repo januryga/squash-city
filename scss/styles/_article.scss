@@ -1,0 +1,22 @@
+/*
+
+Styles for an article/post (single.php)
+
+*/
+
+.article {
+    @include card;
+    margin-top: 2.5rem;
+    h2 {
+        margin-bottom:2rem;
+    }
+    .body {
+        padding: 2rem !important;
+        background-color: white;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

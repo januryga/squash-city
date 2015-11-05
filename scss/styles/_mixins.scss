@@ -1,0 +1,25 @@
+/*
+
+Mixins
+
+*/
+
+@mixin card($no_bg: false) {
+
+    @if not $no_bg {
+        background: white;
+    }
+
+	border-radius: 2px;
+	overflow: hidden;
+	@extend .shadow;
+}
+
+
+@mixin round($size: 8rem) {
+	width: $size;
+	height: $size;
+
+	border: 2px solid $bordergrey-t;
+	border-radius: ($size / 2) !important;
+}

@@ -1,0 +1,26 @@
+/*
+
+Additional utility styles used in various places
+
+*/
+
+//used for section titles
+h0 {
+	display:block;
+	font-size: rem-calc(44);
+	font-weight: 300;
+	margin: 2rem 0 1.5rem 0;
+}
+
+
+
+.shadow {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23);
+}
+
+
+.center {
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}

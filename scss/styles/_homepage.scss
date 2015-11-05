@@ -1,0 +1,122 @@
+/*
+
+Styles for the homepage (index.php)
+
+*/
+
+
+.welcome-banner {
+	display:block;
+	overflow:auto;
+	width: 100%;
+    min-height: 10rem;
+	text-align: center;
+
+	padding-bottom: 1.25rem;
+    margin-bottom: 0.95rem;
+
+	background-color: $niceblue;
+	/*background-image: url('../img/squash-guy.jpg');
+	background-size:cover;
+    background-position: center top;*/
+
+	.welcome-text {
+		display:block;
+		font-size: 3rem;
+		font-weight:300;
+		text-shadow: 0 7px 70px rgba(0,0,0,1);
+		color: white;
+		margin: 3rem 0 3.7rem 0;
+	}
+}
+
+
+
+
+.helper-button-wrap {
+
+	$link-color: white;
+
+	a:link, a:visited {
+		color: $link-color;
+	}
+	a:hover {
+		color: darken($link-color, 5%);
+	}
+	a:active {
+		color: darken($link-color, 12%);
+	}
+
+	.helper-button{
+
+		padding-top: 1.21rem;
+		padding-bottom: 0.6rem;
+
+		white-space: nowrap;
+		text-align: center;
+		text-decoration: none;
+
+		border: 1px solid white;
+		border-radius: 5px;
+
+		@media #{$small-only} {
+			margin: 0.5rem;
+		}
+	}
+
+	i {
+		font-size: 2.6rem;
+	}
+	helper-label {
+		font-weight: 300;
+		font-size: 1.25rem;
+		@media #{$medium-only} {
+			font-size: 1.08rem;
+		}
+		@media #{$small-only} {
+			font-size: 1rem;
+		}
+	}
+
+}
+
+
+
+.article-card-wrap {
+
+	.article-card {
+
+		@include card();
+
+		img {
+			display:block;
+			object-fit:cover;
+			object-position:center;
+
+			width:100%;
+			max-height:9rem;
+			border-bottom: 1px solid $bordergrey-t;
+		}
+
+		article-title {
+			display: block;
+			font-size: 1.3rem;
+			margin:0.5rem 1rem;
+		}
+	}
+}
+
+
+
+.thumbnail-placeholder {
+    display:block;
+    background-color: #c1c1c1;
+    text-align:center;
+    overflow:auto;
+    i {
+        margin: 3rem;
+        display: block;
+        color: rgba(0, 0, 0, 0.15);
+        font-size: 6rem;
+    }
+}

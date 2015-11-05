@@ -1,0 +1,105 @@
+/*
+
+Styles for Cennik (cennik.php)
+
+*/
+
+.price-table {
+	@include card($no_bg: true);
+    table-layout:fixed;
+
+	position: relative;
+	border-collapse: collapse;
+	width:100%;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+
+
+    th {
+        background-color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0.5rem 1rem !important;
+    }
+
+
+	tr.hours {
+		font-weight: 300;
+		border-bottom: 1px solid $bordergrey-t12;
+		th {
+			padding:0.15rem 0.5rem !important;
+			background-color: $lightgrey;
+			border-right: 1px solid $bordergrey-t5;
+		}
+        //as in "hour", used in Cennik
+        ho {
+            font-size: 0.9rem !important;
+            font-weight:500;
+
+            @media #{$medium-up} {
+                &:after{
+                    vertical-align: super;
+                    font-size:60%;
+                    border-bottom: 1px solid rgba(0,0,0,0.25);
+                    margin: 0px 1px;
+                    content:"00";
+                }
+            }
+        }
+	}
+
+
+	col {
+		border-right: 1px solid $bordergrey-t5;
+	}
+    col:nth-last-child(1) {
+        width: 30%;
+        border-right: 0;
+        border-left: 2px solid $bordergrey-t5;
+    }
+	//use nth-child to make thicken border between Pon-Pt. And Weekend
+
+
+
+    tr.description {
+		td {
+			padding: 0.4rem 0.8rem 0.1rem 0.8rem;
+			font-size: 0.9rem;
+			text-align: left !important;
+			//background-color:rgba(0, 0, 0, 0.03);
+		}
+	}
+
+	td {
+		font-size: 1.3rem;
+		text-align:center !important;
+		padding: 0.5rem;
+	}
+
+}
+
+
+
+.extra-table{
+    @include card;
+	border-collapse: collapse;
+	width:100%;
+
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+
+    col {
+		border: 1px solid $bordergrey-t5;
+	}
+
+    tr:nth-child(even) {
+        background-color: $silver;
+    }
+
+    td {
+		font-size: 1.3rem;
+		//text-align:left !important;
+		padding: 1rem;
+	}
+}

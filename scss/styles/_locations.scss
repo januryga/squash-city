@@ -1,0 +1,46 @@
+/*
+
+Styles for Kontakt (kontakt.php)
+
+*/
+
+
+.location-card {
+
+	@include card();
+	height:9rem;
+	background-color: $niceblue;
+
+	.location-name {
+
+		display: block;
+		text-align:center;
+		margin-top: 2rem;
+		font-size: 3rem;
+		font-weight: 300;
+		color: white !important;
+	}
+
+}
+
+
+.location-accordion {
+
+	@include accordion-container;
+	margin-left: 0 !important;
+
+	.location-accordion-navigation{
+
+		@include accordion-navigation( $bg: none, $hover-bg: none, $active-bg: white,
+			$padding: 0rem, $active_class: 'active', $font-size: 10rem !important);
+		margin: 1rem 0;
+
+		& > .content {
+			@include accordion-content($bg: white, $padding: 1rem, $active_class: 'active');
+			@include card;
+			p {
+				font-size:1.25rem;
+			}
+		}
+	}
+}
