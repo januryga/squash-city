@@ -5416,7 +5416,7 @@ th.hide-for-touch {
       color: #222222;
       font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-size: 1rem;
-      padding: 1rem 2rem; }
+      padding: 0.75rem 1.5rem; }
       /* line 50, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_tabs.scss */
       .tabs dd > a:hover,
       .tabs .tab-title > a:hover {
@@ -5450,7 +5450,7 @@ th.hide-for-touch {
 
 /* line 84, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_tabs.scss */
 .tabs-content {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   width: 100%; }
   /* line 172, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_global.scss */
   .tabs-content:before, .tabs-content:after {
@@ -5965,11 +5965,11 @@ blockquote p {
   h6 {
     font-size: 1rem; } }
 
-/* line 59, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 50, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 body a {
   text-decoration: none !important; }
 
-/* line 68, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 59, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .welcome-banner {
   display: block;
   overflow: auto;
@@ -5982,7 +5982,7 @@ body a {
   /*background-image: url('../img/squash-guy.jpg');
 	background-size:cover;
     background-position: center top;*/ }
-  /* line 83, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 74, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .welcome-banner .welcome-text {
     display: block;
     font-size: 3rem;
@@ -5991,19 +5991,19 @@ body a {
     color: white;
     margin: 3rem 0 3.7rem 0; }
 
-/* line 100, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 91, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap a:link, .helper-button-wrap a:visited {
   color: white; }
 
-/* line 103, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 94, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap a:hover {
   color: #f2f2f2; }
 
-/* line 106, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 97, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap a:active {
   color: #e0e0e0; }
 
-/* line 110, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 101, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap .helper-button {
   padding-top: 1.21rem;
   padding-bottom: 0.6rem;
@@ -6013,46 +6013,33 @@ body a {
   border: 1px solid white;
   border-radius: 5px; }
   @media only screen and (max-width: 40em) {
-    /* line 110, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 101, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .helper-button-wrap .helper-button {
       margin: 0.5rem; } }
 
-/* line 127, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 118, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap i {
   font-size: 2.6rem; }
 
-/* line 130, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 121, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .helper-button-wrap helper-label {
   font-weight: 300;
   font-size: 1.25rem; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    /* line 130, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 121, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .helper-button-wrap helper-label {
       font-size: 1.08rem; } }
   @media only screen and (max-width: 40em) {
-    /* line 130, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 121, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .helper-button-wrap helper-label {
       font-size: 1rem; } }
 
-/* line 148, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 139, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .article-card-wrap .article-card {
-  /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
-  border-radius: 2px;
   background: white;
+  border-radius: 2px;
   overflow: hidden; }
-  /* line 152, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 143, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .article-card-wrap .article-card img {
     display: block;
     object-fit: cover;
@@ -6060,33 +6047,20 @@ body a {
     width: 100%;
     max-height: 9rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.22); }
-  /* line 162, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 153, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .article-card-wrap .article-card article-title {
     display: block;
     font-size: 1.3rem;
     margin: 0.5rem 1rem; }
 
-/* line 174, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 165, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .location-card {
-  /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
-  border-radius: 2px;
   background: white;
+  border-radius: 2px;
   overflow: hidden;
   height: 9rem;
   background-color: #70bee5; }
-  /* line 180, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 171, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .location-card .location-name {
     display: block;
     text-align: center;
@@ -6095,7 +6069,7 @@ body a {
     font-weight: 300;
     color: white !important; }
 
-/* line 193, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 184, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .location-accordion {
   margin-bottom: 0;
   margin-left: 0 !important; }
@@ -6106,7 +6080,7 @@ body a {
   /* line 173, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_global.scss */
   .location-accordion:after {
     clear: both; }
-  /* line 198, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 189, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .location-accordion .location-accordion-navigation {
     display: block;
     margin-bottom: 0 !important;
@@ -6126,31 +6100,18 @@ body a {
       /* line 93, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_accordion.scss */
       .location-accordion .location-accordion-navigation > a:hover {
         background: none; }
-    /* line 204, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 195, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .location-accordion .location-accordion-navigation > .content {
       display: none;
       padding: 1rem;
-      /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
-      border-radius: 2px;
       background: white;
+      border-radius: 2px;
       overflow: hidden; }
       /* line 122, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/foundation/components/_accordion.scss */
       .location-accordion .location-accordion-navigation > .content.active {
         background: white;
         display: block; }
-      /* line 207, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+      /* line 198, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
       .location-accordion .location-accordion-navigation > .content p {
         font-size: 1.25rem; }
 
@@ -6160,28 +6121,15 @@ body a {
 @media only screen and (min-width:64.0625em) {
 	$profile-size: 8rem;
 }*/
-/* line 226, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 217, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .profile-card {
-  /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
-  border-radius: 2px;
   background: white;
+  border-radius: 2px;
   overflow: hidden;
   height: 100%;
   padding: 1rem;
   color: black; }
-  /* line 236, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 227, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .profile-card img {
     display: inline-block;
     vertical-align: top;
@@ -6191,140 +6139,138 @@ body a {
     margin-right: 0.7rem;
     margin-bottom: 1rem; }
     @media only screen and (max-width: 40em) {
-      /* line 236, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+      /* line 227, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
       .profile-card img {
         width: 6rem;
         height: 6rem;
         border: 2px solid rgba(0, 0, 0, 0.22);
         border-radius: 3rem !important; } }
     @media only screen and (min-width: 40.0625em) {
-      /* line 236, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+      /* line 227, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
       .profile-card img {
         width: 8rem;
         height: 8rem;
         border: 2px solid rgba(0, 0, 0, 0.22);
         border-radius: 4rem !important; } }
-  /* line 254, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 245, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .profile-card .profile-info {
     display: inline-block;
     vertical-align: middle;
     font-size: 2.1rem;
     font-weight: 300; }
     @media only screen and (max-width: 40em) {
-      /* line 254, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+      /* line 245, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
       .profile-card .profile-info {
         font-size: 1.5rem; } }
-    /* line 264, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 255, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .profile-card .profile-info a {
       display: block;
       font-weight: 300;
       font-size: 1.6rem; }
       @media only screen and (max-width: 40em) {
-        /* line 264, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+        /* line 255, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
         .profile-card .profile-info a {
           font-size: 1.1rem; } }
-  /* line 274, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 265, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .profile-card p {
     margin-bottom: 0 !important; }
 
-/* line 281, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 272, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .price-table {
-  /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
   border-radius: 2px;
-  background: white;
   overflow: hidden;
+  table-layout: fixed;
   position: relative;
   border-collapse: collapse;
   width: 100%;
   margin-top: 0 !important;
   margin-bottom: 0.5rem !important; }
-  /* line 292, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-  .price-table thead {
-    font-weight: 300; }
-    /* line 294, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-    .price-table thead td {
-      padding-left: 1rem !important;
-      padding-right: 1rem !important; }
-  /* line 300, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-  .price-table col {
-    border: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 305, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 284, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .price-table th {
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem 1rem !important; }
+  /* line 291, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .price-table tr.hours {
     font-weight: 300;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-    /* line 308, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-    .price-table tr.hours td {
+    /* line 294, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    .price-table tr.hours th {
       padding: 0.15rem 0.5rem !important;
       background-color: #f4f4f4;
-      border-left: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 317, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+      border-right: 1px solid rgba(0, 0, 0, 0.05); }
+  /* line 301, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .price-table col {
+    border-right: 1px solid rgba(0, 0, 0, 0.05); }
+  /* line 304, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .price-table col:nth-last-child(1) {
+    width: 30%;
+    border-right: 0;
+    border-left: 2px solid rgba(0, 0, 0, 0.05); }
+  /* line 315, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .price-table tr.description td {
     padding: 0.4rem 0.8rem 0.1rem 0.8rem;
     font-size: 0.9rem;
     text-align: left !important; }
-  /* line 325, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 323, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .price-table td {
     font-size: 1.3rem;
     text-align: center !important;
     padding: 0.5rem; }
 
-/* line 333, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-.article {
-  /*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
-
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
-  border-radius: 2px;
+/* line 331, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+.extra-table {
   background: white;
+  border-radius: 2px;
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem !important;
+  margin-bottom: 2rem !important; }
+  /* line 339, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .extra-table col {
+    border: 1px solid rgba(0, 0, 0, 0.05); }
+  /* line 343, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .extra-table tr:nth-child(even) {
+    background-color: #EFEFEF; }
+  /* line 347, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  .extra-table td {
+    font-size: 1.3rem;
+    padding: 1rem; }
+
+/* line 354, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+.article {
+  background: white;
+  border-radius: 2px;
   overflow: hidden;
   margin-top: 2.5rem; }
-  /* line 336, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 357, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .article h2 {
     margin-bottom: 2rem; }
-  /* line 339, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 360, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .article .body {
     padding: 2rem !important;
     background-color: white; }
-  /* line 344, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 365, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .article img {
     width: 100%;
     height: auto; }
 
-/* line 350, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 371, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .thumbnail-placeholder {
   display: block;
   background-color: #c1c1c1;
   text-align: center;
   overflow: auto; }
-  /* line 355, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 376, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .thumbnail-placeholder i {
     margin: 3rem;
     display: block;
     color: rgba(0, 0, 0, 0.15);
     font-size: 6rem; }
 
-/* line 363, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 384, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .footer {
   width: 100%;
   margin-top: 6rem;
@@ -6332,33 +6278,33 @@ body a {
   font-weight: 300;
   background-color: #a2a2a2;
   color: #eaeaea; }
-  /* line 372, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 393, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   .footer a {
     float: right;
     text-decoration: underline !important; }
-    /* line 376, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 397, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .footer a:link, .footer a:visited {
       color: white; }
-    /* line 379, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 400, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .footer a:hover {
       color: #f2f2f2; }
-    /* line 382, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 403, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     .footer a:active {
       color: #e0e0e0; }
 
-/* line 390, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 411, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 h0 {
   display: block;
   font-size: 2.75rem;
   font-weight: 300;
   margin: 2rem 0 1.5rem 0; }
 
-/* line 397, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 418, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 ho {
   font-size: 0.9rem !important;
   font-weight: 500; }
   @media only screen and (min-width: 40.0625em) {
-    /* line 402, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+    /* line 423, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
     ho:after {
       vertical-align: super;
       font-size: 60%;
@@ -6366,21 +6312,21 @@ ho {
       margin: 0px 1px;
       content: "00"; } }
 
-/* line 412, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
-.shadow, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation > .content, .profile-card, .price-table, .article {
+/* line 433, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+.shadow, .article-card-wrap .article-card, .location-card, .location-accordion .location-accordion-navigation > .content, .profile-card, .price-table, .extra-table, .article {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23); }
 
-/* line 416, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+/* line 437, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
 .center {
   float: none;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 426, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 447, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   nav.top-bar {
     text-align: center; }
-  /* line 429, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
+  /* line 450, C:/MAMP/htdocs/wp-content/themes/squash-city/scss/app.scss */
   section.top-bar-section {
     display: inline-block; } }
 

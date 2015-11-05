@@ -78,8 +78,9 @@
                 data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
 
-				<?php $query = new WP_Query( 'category_name=news' ); ?>
- 				<?php: while ( $query->have_posts() ) : $query->the_post(); ?>
+<?php $loop = new WP_Query( 'category_name=news' ); ?>
+<?php: while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
 
 					<li class="masonry-item">
 
@@ -87,8 +88,8 @@
 
 					</li>
 
-				<?php endwhile;
- 				wp_reset_postdata(); ?>
+<?php endwhile;
+wp_reset_postdata(); ?>
 
 			</ul>
 		</div>

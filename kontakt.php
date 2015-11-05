@@ -10,17 +10,16 @@ Template Name: Kontakt
 <div class="row">
 		<div class="small-12 medium-9 large-10 small-centered column">
 			<h0>Kontakt</h0>
-			<!-- Profiles -->
+			<!-- Locations -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
 					   large-block-grid-2">
 
-				<?php
-                $post_num = 1;
-				$args = array( 'post_type' => 'location');
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post();
-				?>
+<?php
+$post_num = 1;
+$loop = new WP_Query('post_type=location');
+while ( $loop->have_posts() ) : $loop->the_post();
+?>
 
 				<li>
 
@@ -28,14 +27,14 @@ Template Name: Kontakt
 
 				</li>
 
-				<?php
-                    $post_num++;
-				endwhile;
-				?>
+<?php
+    $post_num++;
+endwhile;
+?>
 
 
 			</ul>
-			<!-- End Profiles -->
+			<!-- End Locations -->
 		</div>
 	</div>
 

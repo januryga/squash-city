@@ -16,13 +16,13 @@ Template Name: Trenerzy
                        js-masonry"
                 data-masonry-options='{"itemSelector": ".masonry-item" }'>
 
-				<?php
-                //sort posts alphabetically:
-				$args = array( 'post_type' => 'profile', 'orderby'=> 'title', 'order' => 'ASC');
+<?php
+//sort posts alphabetically:
+$args = array( 'post_type' => 'profile', 'orderby'=> 'title', 'order' => 'ASC');
 
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post();
-				?>
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post();
+?>
 
 				<li class="masonry-item">
 
@@ -30,9 +30,9 @@ Template Name: Trenerzy
 
 				</li>
 
-				<?php
-				endwhile;
-				?>
+<?php
+endwhile;
+?>
 
 
 			</ul>

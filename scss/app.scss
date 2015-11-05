@@ -25,22 +25,13 @@
 
 
 
-@mixin card($margin: false, $border: true, $border-transp:false) {
-	/*@if $margin { margin: 1rem 0rem; }
-	@if $border {
-		border-top: 1px solid $bordergrey;
-		border-right: 1px solid $bordergrey;
-		border-left: 1px solid $bordergrey;
-	}
+@mixin card($no_bg: false) {
 
-	@if $border-transp {
-		border-top: 1px solid $bordergrey-t;
-		border-right: 1px solid $bordergrey-t;
-		border-left: 1px solid $bordergrey-t;
-	}
-    */
+    @if not $no_bg {
+        background: white;
+    }
+
 	border-radius: 2px;
-    background: white;
 	overflow: hidden;
 	@extend .shadow;
 }
@@ -173,7 +164,7 @@ body {
 
 .location-card {
 
-	@include card($border-transp:true);
+	@include card();
 	height:9rem;
 	background-color: $niceblue;
 
@@ -279,7 +270,8 @@ body {
 
 
 .price-table {
-	@include card;
+	@include card($no_bg: true);
+    table-layout:fixed;
 
 	position: relative;
 	border-collapse: collapse;
@@ -287,30 +279,36 @@ body {
 
     margin-top: 0 !important;
     margin-bottom: 0.5rem !important;
-    //margin-bottom: 1.5rem;
 
-	thead {
-		font-weight: 300;
-		td {
-			padding-left: 1rem !important;
-			padding-right: 1rem !important;
-		}
-	}
 
-	col {
-		border: 1px solid $bordergrey-t5;
-	}
-	//use nth-child to make thicken border between Pon-Pt. And Weekend
+    th {
+        background-color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 0.5rem 1rem !important;
+    }
 
 	tr.hours {
 		font-weight: 300;
 		border-bottom: 1px solid $bordergrey-t12;
-		td {
+		th {
 			padding:0.15rem 0.5rem !important;
 			background-color: $lightgrey;
-			border-left: 1px solid $bordergrey-t5;
+			border-right: 1px solid $bordergrey-t5;
 		}
 	}
+
+	col {
+		border-right: 1px solid $bordergrey-t5;
+	}
+    col:nth-last-child(1) {
+        width: 30%;
+        border-right: 0;
+        border-left: 2px solid $bordergrey-t5;
+    }
+	//use nth-child to make thicken border between Pon-Pt. And Weekend
+
+
 
 
     tr.description {
@@ -328,6 +326,29 @@ body {
 		padding: 0.5rem;
 	}
 
+}
+
+.extra-table{
+    @include card;
+	border-collapse: collapse;
+	width:100%;
+
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+
+    col {
+		border: 1px solid $bordergrey-t5;
+	}
+
+    tr:nth-child(even) {
+        background-color: $silver;
+    }
+
+    td {
+		font-size: 1.3rem;
+		//text-align:left !important;
+		padding: 1rem;
+	}
 }
 
 .article {
