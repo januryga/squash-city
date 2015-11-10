@@ -4,6 +4,24 @@ Styles for Cennik (cennik.php)
 
 */
 
+/*.location-card {
+
+	@include card();
+	height:9rem;
+	background-color: $niceblue;
+
+	.location-name {
+
+		display: block;
+		text-align:center;
+		margin-top: 2rem;
+		font-size: 3rem;
+		font-weight: 300;
+		color: white !important;
+	}
+
+}*/
+
 .price-table {
 	@include card($no_bg: true);
     table-layout:fixed;
@@ -58,7 +76,6 @@ Styles for Cennik (cennik.php)
         border-right: 0;
         border-left: 2px solid $bordergrey-t5;
     }
-	//use nth-child to make thicken border between Pon-Pt. And Weekend
 
 
 

@@ -132,6 +132,7 @@ $bordergrey-t12: rgba(0, 0, 0, 0.12);
 
 // We use these to control various global styles
 $body-bg: $softgrey;
+// $body-bg: #f7d1b5;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -572,8 +573,11 @@ $header-font-weight: 300;
 // $f-dropdown-list-style: none;
 // $f-dropdown-font-color: $charcoal;
 // $f-dropdown-font-size: rem-calc(14);
+$f-dropdown-font-size: rem-calc(20);
 // $f-dropdown-list-padding: rem-calc(5, 10);
+$f-dropdown-list-padding: rem-calc(15, 10);
 // $f-dropdown-line-height: rem-calc(18);
+//   $f-dropdown-line-height: rem-calc(45);
 // $f-dropdown-list-hover-bg: $smoke;
 // $dropdown-mobile-default-float: 0;
 

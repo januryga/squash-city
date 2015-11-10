@@ -4,6 +4,24 @@ Additional utility styles used in various places
 
 */
 
+
+.tabs.with-border{
+    
+    li:first-child{
+        border-left: none;
+    }
+    li{
+        border-left: 1px solid $bordergrey;
+    }
+    
+    
+    li.active {
+        border-top:1px solid $bordergrey;
+        border-left:1px solid $bordergrey !important;
+        border-right:1px solid $bordergrey;
+    }
+}
+
 //used for section titles
 h0 {
 	display:block;

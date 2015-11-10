@@ -16,7 +16,7 @@
 
             <!-- Map Tabs -->
 <?php global $post_num; ?>
-            <ul class="tabs" data-tab>
+            <ul class="tabs with-border" data-tab>
 
                 <!-- Google Maps tab nav: -->
                 <li class="tab-title active">

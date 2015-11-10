@@ -6,6 +6,7 @@ Styles for the homepage (index.php)
 
 
 .welcome-banner {
+    
 	display:block;
 	overflow:auto;
 	width: 100%;
@@ -14,12 +15,20 @@ Styles for the homepage (index.php)
 
 	padding-bottom: 1.25rem;
     margin-bottom: 0.95rem;
-
-	background-color: $niceblue;
-	/*background-image: url('../img/squash-guy.jpg');
-	background-size:cover;
-    background-position: center top;*/
-
+    
+    //$overlay-color: rgba(245, 157, 69, 0.95);
+    $overlay-color: rgba(112, 190, 229, 0.95);
+    background: 
+        /* top, transparent color, faked with gradient */ 
+        linear-gradient(
+          $overlay-color, $overlay-color
+        ),
+        /* bottom, image */
+        url('../img/squash-guy.jpg');
+    
+    background-size:cover;
+    background-position: center top;
+    
 	.welcome-text {
 		display:block;
 		font-size: 3rem;
@@ -30,22 +39,34 @@ Styles for the homepage (index.php)
 	}
 }
 
+.f-dropdown {
+    .phone-number {
+        color: #4b4b4b;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
 
 
 
 .helper-button-wrap {
 
 	$link-color: white;
-
-	a:link, a:visited {
-		color: $link-color;
-	}
-	a:hover {
-		color: darken($link-color, 5%);
-	}
-	a:active {
-		color: darken($link-color, 12%);
-	}
+    
+    a {
+        color: $link-color !important;
+        
+        &:link, &:visited {
+            color: $link-color !important;
+        }
+        &:hover {
+            color: darken($link-color, 5%) !important;
+        }
+        &:active {
+            color: darken($link-color, 12%) !important;
+        }
+    }
 
 	.helper-button{
 

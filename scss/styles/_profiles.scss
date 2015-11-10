@@ -20,24 +20,30 @@ Styles for Trenerzy (trenerzy.php)
 		background: none !important;
 		object-fit:cover;
 		object-position:center;
-
-		margin-right:0.7rem;
-		margin-bottom:1rem;
+        
+        margin-top: -0.25rem;
+        margin-left: -0.25rem;
+		
 
 		@media #{$small-only} {
+            margin-right:0.2rem;
+            margin-bottom:0.7rem;
 			@include round($size: 6rem);
 		}
 		@media #{$medium-up} {
+            margin-right:0.5rem;
+            margin-bottom:0.8rem;
 			@include round($size: 8rem);
 		}
 	}
 
 	.profile-info {
 		display: inline-block;
-		vertical-align:middle;
-
-		font-size: 2.1rem;
-		@media #{$small-only} { font-size: 1.5rem; }
+		vertical-align: middle;
+        margin-top: 0.5rem;
+        
+		font-size: 1.5rem;
+		@media #{$small-only} { font-size: 1.3rem; }
 
 		font-weight: 300;
 
@@ -47,7 +53,7 @@ Styles for Trenerzy (trenerzy.php)
 			display:block;
 			font-weight:300;
 
-			font-size:1.6rem;
+			font-size:1.4rem;
 			@media #{$small-only} { font-size: 1.1rem; }
 		}
 	}
