@@ -985,15 +985,15 @@ button, .button {
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: black;
+  border-color: black;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   /* line 164, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
   button:hover,
   button:focus, .button:hover,
   .button:focus {
-    background-color: #007095; }
+    background-color: black; }
   /* line 170, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
   button:hover,
   button:focus, .button:hover,
@@ -1111,8 +1111,8 @@ button, .button {
     border-radius: 1000px; }
   /* line 242, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #008CBA;
-    border-color: #007095;
+    background-color: black;
+    border-color: black;
     color: #FFFFFF;
     box-shadow: none;
     cursor: default;
@@ -1123,7 +1123,7 @@ button, .button {
     button[disabled]:focus, .button.disabled:hover,
     .button.disabled:focus, .button[disabled]:hover,
     .button[disabled]:focus {
-      background-color: #007095; }
+      background-color: black; }
     /* line 170, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
     button.disabled:hover,
     button.disabled:focus, button[disabled]:hover,
@@ -1137,7 +1137,7 @@ button, .button {
     button[disabled]:focus, .button.disabled:hover,
     .button.disabled:focus, .button[disabled]:hover,
     .button[disabled]:focus {
-      background-color: #008CBA; }
+      background-color: black; }
     /* line 243, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
@@ -1882,7 +1882,7 @@ button::-moz-focus-inner {
 
 /* line 80, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_clearing.scss */
 .clearing-touch-label {
-  color: #AAAAAA;
+  color: #6b97d4;
   font-size: .6em;
   left: 50%;
   position: absolute;
@@ -3800,7 +3800,7 @@ button::-moz-focus-inner {
     z-index: 1003; }
   /* line 204, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_reveal.scss */
   .reveal-modal .close-reveal-modal {
-    color: #AAAAAA;
+    color: #6b97d4;
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: bold;
@@ -4672,13 +4672,13 @@ meta.foundation-mq-topbar {
         font-size: 0.875rem;
         padding-left: 0.9375rem;
         padding-right: 0.9375rem;
-        background-color: #008CBA;
-        border-color: #007095;
+        background-color: black;
+        border-color: black;
         color: #FFFFFF; }
         /* line 164, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
         .top-bar-section ul li > a.button:hover,
         .top-bar-section ul li > a.button:focus {
-          background-color: #007095; }
+          background-color: black; }
         /* line 170, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
         .top-bar-section ul li > a.button:hover,
         .top-bar-section ul li > a.button:focus {
@@ -4753,13 +4753,13 @@ meta.foundation-mq-topbar {
       font-size: 0.875rem;
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
-      background-color: #008CBA;
-      border-color: #007095;
+      background-color: black;
+      border-color: black;
       color: #FFFFFF; }
       /* line 164, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
       .top-bar-section ul li > button:hover,
       .top-bar-section ul li > button:focus {
-        background-color: #007095; }
+        background-color: black; }
       /* line 170, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_buttons.scss */
       .top-bar-section ul li > button:hover,
       .top-bar-section ul li > button:focus {
@@ -5968,13 +5968,13 @@ td {
 /* Default Link Styles */
 /* line 217, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_type.scss */
 a {
-  color: #008CBA;
+  color: black;
   line-height: inherit;
   text-decoration: none; }
   /* line 223, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_type.scss */
   a:hover,
   a:focus {
-    color: #0078a0; }
+    color: black; }
   /* line 230, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/foundation/components/_type.scss */
   a img {
     border: none; }
@@ -6305,7 +6305,7 @@ Styles for the homepage (index.php)
   text-align: center;
   padding-bottom: 1.25rem;
   margin-bottom: 0.95rem;
-  background: linear-gradient(rgba(112, 190, 229, 0.95), rgba(112, 190, 229, 0.95)), url("../img/squash-guy.jpg");
+  background: linear-gradient(rgba(107, 151, 212, 0.95), rgba(107, 151, 212, 0.95)), url("../img/squash-guy.jpg");
   background-size: cover;
   background-position: center top; }
   /* line 32, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */

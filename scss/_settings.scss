@@ -122,8 +122,15 @@ $bordergrey-t: rgba(0, 0, 0, 0.22);
 $bordergrey-t5: rgba(0, 0, 0, 0.05);
 $bordergrey-t12: rgba(0, 0, 0, 0.12);
 
+//$base: rgb(234, 151, 68);
+$base: #6b97d4;
+//$bg-color: lighten($base, 32%);
+$bg-color: $softgrey;
+$link-color: darken($base, 20%);
+
+
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: black;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -131,8 +138,8 @@ $bordergrey-t12: rgba(0, 0, 0, 0.12);
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $softgrey;
-// $body-bg: #f7d1b5;
+//$body-bg: $softgrey;
+$body-bg: $bg-color;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;

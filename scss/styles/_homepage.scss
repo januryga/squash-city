@@ -16,8 +16,8 @@ Styles for the homepage (index.php)
 	padding-bottom: 1.25rem;
     margin-bottom: 0.95rem;
     
-    //$overlay-color: rgba(245, 157, 69, 0.95);
-    $overlay-color: rgba(112, 190, 229, 0.95);
+    //$overlay-color: rgb(234, 151, 68);
+    $overlay-color: rgba($base, 0.95);
     background: 
         /* top, transparent color, faked with gradient */ 
         linear-gradient(

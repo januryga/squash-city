@@ -10,7 +10,7 @@
         </tr>
         <tr class="hours">
             <th><ho>7</ho> - <ho>9</ho></th>
-            <th><ho>10</ho> - <ho>16</ho></th>
+            <th><ho>9</ho> - <ho>17</ho></th>
             <th><ho>17</ho> - <ho>23</ho></th>
             <th><ho>7</ho> - <ho>22</ho></th>
         </tr>
