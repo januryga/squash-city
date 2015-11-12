@@ -5,7 +5,13 @@ Styles for the homepage (index.php)
 */
 
 .gradient-bg {
-    background: linear-gradient($base 0%, $base 50%, $none 100%);
+    @media #{$small-only} {
+        background: linear-gradient($base 0%, $none 100%);
+    }
+        
+    @media #{$medium-up} {
+        background: linear-gradient($base 0%, $base 75%, $none 100%);
+    }
 }
 
 #welcome-banner {
@@ -34,15 +40,19 @@ Styles for the homepage (index.php)
     
 	.welcome-text {
 		display:block;
+        margin: 5.5rem 0 3.7rem 0;
+        
 		font-size: 3rem;
 		font-weight:300;
 		text-shadow: 0 7px 70px rgba(0,0,0,1);
 		color: white;
-		margin: 3rem 0 3.7rem 0;
 	}
 }
 
 .f-dropdown {
+    a {
+        color: $primary-color !important;
+    }
     .phone-number {
         color: #4b4b4b;
         font-size: 1rem;

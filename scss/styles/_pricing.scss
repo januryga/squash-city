@@ -23,7 +23,8 @@ Styles for Cennik (cennik.php)
 }*/
 
 .price-table {
-	@include card($no_bg: true);
+	//@include card($no-bg: true);
+	@include card($no-bg: true);
     table-layout:fixed;
 
 	position: relative;
@@ -33,12 +34,13 @@ Styles for Cennik (cennik.php)
     margin-top: 0 !important;
     margin-bottom: 0.5rem !important;
 
-
-    th {
-        background-color: white;
-        font-size: 1.5rem;
-        font-weight: 300;
-        padding: 0.5rem 1rem !important;
+    tr.days{
+        th {
+            background-color: white;
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 0.5rem 1rem !important;
+        }
     }
 
 
@@ -96,7 +98,10 @@ Styles for Cennik (cennik.php)
 
 }
 
-
+.lesson-table{
+    @extend .extra-table;
+//    margin-bottom: 1rem !important;
+}
 
 .extra-table{
     @include card;
@@ -104,7 +109,7 @@ Styles for Cennik (cennik.php)
 	width:100%;
 
     margin-top: 1rem !important;
-    margin-bottom: 2rem !important;
+//    margin-bottom: 2rem !important;
 
     col {
 		border: 1px solid $shade5;
@@ -120,3 +125,5 @@ Styles for Cennik (cennik.php)
 		padding: 1rem;
 	}
 }
+
+

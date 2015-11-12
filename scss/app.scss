@@ -45,12 +45,28 @@
 
 //center the top menu:
 @media #{$medium-up} {
-	nav.top-bar {
-		text-align:center;
-	}
-	section.top-bar-section {
-		display: inline-block;
-	}
+    
+    nav.top-bar {
+        text-align:center;
+    }
+    section.top-bar-section {
+        display: inline-block;
+    }
+    
+}
+
+
+.logo {
+    left: 1rem;
+    top: 0.42rem;
+    position: absolute;
+    height: $topbar-height;
+    z-index: 1000;
+
+    a {
+        color: white !important;
+        font-size: 1.3rem !important;
+    }
 }
 
 
@@ -62,21 +78,29 @@ body {
 }
 
 
-.footer {
-	width:100%;
+footer {
+	width: 100%;
+    /*position: absolute;
+    bottom: 0;*/
+    
 	margin-top: 6rem;
 	padding: 0.5rem;
 
 	font-weight: 300;
-	background-color: #a2a2a2;
-	color: #eaeaea;
-
-	a {
+	//background-color: #B9B9B9;
+	color: black;
+    
+    
+    
+    a {
+		float: right;
+    }
+	/*a {
 		float: right;
 		text-decoration: underline !important;
 
 		&:link, &:visited {
-		color: white;
+		  color: white;
 		}
 		&:hover {
 			color: darken(white, 5%);
@@ -84,7 +108,7 @@ body {
 		&:active {
 			color: darken(white, 12%);
 		}
-	}
+	}*/
 
 }
 

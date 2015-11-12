@@ -6344,7 +6344,7 @@ h0 {
   margin: 2rem 0 1.5rem 0; }
 
 /* line 37, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-.shadow, .article-card-wrap .article-card, .article, .profile-card, .price-table, .extra-table, .location-card, .location-accordion .location-accordion-navigation > .content {
+.shadow, .article-card-wrap .article-card, .article, .profile-card, .price-table, .extra-table, .lesson-table, .location-card, .location-accordion .location-accordion-navigation > .content {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23); }
 
 /* line 41, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
@@ -6357,44 +6357,55 @@ h0 {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 52, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-.no-bg, .top-bar-no-bg {
+/* line 54, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
+.no-bg, .topbar-no-bg:not(.expanded) {
   background-color: transparent !important; }
-  /* line 55, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-  .no-bg div, .top-bar-no-bg div {
-    background-color: transparent !important; }
   /* line 57, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-  .no-bg section, .top-bar-no-bg section {
+  .no-bg div, .topbar-no-bg:not(.expanded) div {
     background-color: transparent !important; }
   /* line 59, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-  .no-bg ul, .top-bar-no-bg ul {
+  .no-bg section, .topbar-no-bg:not(.expanded) section {
     background-color: transparent !important; }
   /* line 61, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-  .no-bg li, .top-bar-no-bg li {
+  .no-bg ul, .topbar-no-bg:not(.expanded) ul {
+    background-color: transparent !important; }
+  /* line 63, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
+  .no-bg li, .topbar-no-bg:not(.expanded) li {
     background-color: transparent !important; }
 
-/* line 68, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-.top-bar-no-bg ul li:not(.active) {
-  background-color: transparent !important; }
-
 /* line 70, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-.top-bar-no-bg li:not(.active) {
+.topbar-no-bg:not(.expanded) ul li:not(.active) {
   background-color: transparent !important; }
 
 /* line 72, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
-.top-bar-no-bg li:not(.active) a {
+.topbar-no-bg:not(.expanded) li:not(.active) {
   background-color: transparent !important; }
+
+/* line 74, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
+.topbar-no-bg:not(.expanded) li:not(.active) a {
+  background-color: transparent !important; }
+
+/* line 78, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_utilities.scss */
+.push-down {
+  display: block;
+  height: 13rem; }
 
 /*
 
 Styles for the homepage (index.php)
 
 */
-/* line 7, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
-.gradient-bg {
-  background: linear-gradient(#82b7eb 0%, #82b7eb 50%, transparent 100%); }
+@media only screen and (max-width: 40em) {
+  /* line 7, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  .gradient-bg {
+    background: linear-gradient(#82b7eb 0%, transparent 100%); } }
 
-/* line 11, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 7, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  .gradient-bg {
+    background: linear-gradient(#82b7eb 0%, #82b7eb 75%, transparent 100%); } }
+
+/* line 17, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 #welcome-banner {
   display: block;
   overflow: auto;
@@ -6406,35 +6417,39 @@ Styles for the homepage (index.php)
   background: linear-gradient(rgba(130, 183, 235, 0.95), rgba(130, 183, 235, 0.95)), url("../img/squash-guy.jpg");
   background-size: cover;
   background-position: center top; }
-  /* line 35, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 41, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   #welcome-banner .welcome-text {
     display: block;
+    margin: 5.5rem 0 3.7rem 0;
     font-size: 3rem;
     font-weight: 300;
     text-shadow: 0 7px 70px black;
-    color: white;
-    margin: 3rem 0 3.7rem 0; }
+    color: white; }
 
-/* line 46, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 53, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+.f-dropdown a {
+  color: #2a84dd !important; }
+
+/* line 56, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .f-dropdown .phone-number {
   color: #4b4b4b;
   font-size: 1rem;
   margin-top: 0.5rem; }
 
-/* line 60, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 70, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .helper-button-wrap a {
   color: white !important; }
-  /* line 63, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 73, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .helper-button-wrap a:link, .helper-button-wrap a:visited {
     color: white !important; }
-  /* line 66, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 76, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .helper-button-wrap a:hover {
     color: #f2f2f2 !important; }
-  /* line 69, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 79, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .helper-button-wrap a:active {
     color: #e0e0e0 !important; }
 
-/* line 74, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 84, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .helper-button-wrap .helper-button {
   padding-top: 1.21rem;
   padding-bottom: 0.6rem;
@@ -6444,33 +6459,33 @@ Styles for the homepage (index.php)
   border: 1px solid white;
   border-radius: 5px; }
   @media only screen and (max-width: 40em) {
-    /* line 74, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+    /* line 84, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
     .helper-button-wrap .helper-button {
       margin: 0.5rem; } }
 
-/* line 91, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 101, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .helper-button-wrap i {
   font-size: 2.6rem; }
 
-/* line 94, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 104, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .helper-button-wrap helper-label {
   font-weight: 300;
   font-size: 1.25rem; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    /* line 94, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+    /* line 104, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
     .helper-button-wrap helper-label {
       font-size: 1.08rem; } }
   @media only screen and (max-width: 40em) {
-    /* line 94, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+    /* line 104, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
     .helper-button-wrap helper-label {
       font-size: 1rem; } }
 
-/* line 111, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 121, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .article-card-wrap .article-card {
   background: white;
   border-radius: 2px;
   overflow: hidden; }
-  /* line 115, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 125, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .article-card-wrap .article-card img {
     display: block;
     object-fit: cover;
@@ -6478,19 +6493,19 @@ Styles for the homepage (index.php)
     width: 100%;
     max-height: 9rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.22); }
-  /* line 125, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 135, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .article-card-wrap .article-card article-title {
     display: block;
     font-size: 1.3rem;
     margin: 0.5rem 1rem; }
 
-/* line 135, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+/* line 145, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
 .thumbnail-placeholder {
   display: block;
   background-color: #c1c1c1;
   text-align: center;
   overflow: auto; }
-  /* line 140, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
+  /* line 150, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_homepage.scss */
   .thumbnail-placeholder i {
     margin: 3rem;
     display: block;
@@ -6616,69 +6631,68 @@ Styles for Cennik (cennik.php)
   width: 100%;
   margin-top: 0 !important;
   margin-bottom: 0.5rem !important; }
-  /* line 37, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
-  .price-table th {
+  /* line 38, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  .price-table tr.days th {
     background-color: white;
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0.5rem 1rem !important; }
-  /* line 45, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  /* line 47, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
   .price-table tr.hours {
     font-weight: 300;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
-    /* line 48, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+    /* line 50, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
     .price-table tr.hours th {
       padding: 0.15rem 0.5rem !important;
       background-color: #f4f4f4;
       border-right: 1px solid rgba(0, 0, 0, 0.05); }
-    /* line 54, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+    /* line 56, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
     .price-table tr.hours ho {
       font-size: 0.9rem !important;
       font-weight: 500; }
       @media only screen and (min-width: 40.0625em) {
-        /* line 59, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+        /* line 61, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
         .price-table tr.hours ho:after {
           vertical-align: super;
           font-size: 60%;
           border-bottom: 1px solid rgba(0, 0, 0, 0.25);
           margin: 0px 1px;
           content: "00"; } }
-  /* line 71, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  /* line 73, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
   .price-table col {
     border-right: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 74, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  /* line 76, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
   .price-table col:nth-last-child(1) {
     width: 30%;
     border-right: 0;
     border-left: 2px solid rgba(0, 0, 0, 0.05); }
-  /* line 83, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  /* line 85, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
   .price-table tr.description td {
     padding: 0.4rem 0.8rem 0.1rem 0.8rem;
     font-size: 0.9rem;
     text-align: left !important; }
-  /* line 91, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  /* line 93, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
   .price-table td {
     font-size: 1.3rem;
     text-align: center !important;
     padding: 0.5rem; }
 
-/* line 101, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
-.extra-table {
+/* line 106, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+.extra-table, .lesson-table {
   background: white;
   border-radius: 2px;
   overflow: hidden;
   border-collapse: collapse;
   width: 100%;
-  margin-top: 1rem !important;
-  margin-bottom: 2rem !important; }
-  /* line 109, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
-  .extra-table col {
+  margin-top: 1rem !important; }
+  /* line 114, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  .extra-table col, .lesson-table col {
     border: 1px solid rgba(0, 0, 0, 0.05); }
-  /* line 113, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
-  .extra-table tr:nth-child(even) {
+  /* line 118, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  .extra-table tr:nth-child(even), .lesson-table tr:nth-child(even) {
     background-color: #EFEFEF; }
-  /* line 117, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
-  .extra-table td {
+  /* line 122, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/styles/_pricing.scss */
+  .extra-table td, .lesson-table td {
     font-size: 1.3rem;
     padding: 1rem; }
 
@@ -6750,37 +6764,54 @@ Styles for Kontakt (kontakt.php)
         font-size: 1.25rem; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 48, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+  /* line 49, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
   nav.top-bar {
     text-align: center; }
-  /* line 51, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+  /* line 52, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
   section.top-bar-section {
     display: inline-block; } }
 
 /* line 59, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+.logo {
+  left: 1rem;
+  top: 0.42rem;
+  position: absolute;
+  height: 2.8125rem;
+  z-index: 1000; }
+  /* line 66, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+  .logo a {
+    color: white !important;
+    font-size: 1.3rem !important; }
+
+/* line 75, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
 body a {
   text-decoration: none !important; }
 
-/* line 65, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
-.footer {
+/* line 81, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+footer {
   width: 100%;
+  /*position: absolute;
+    bottom: 0;*/
   margin-top: 6rem;
   padding: 0.5rem;
   font-weight: 300;
-  background-color: #a2a2a2;
-  color: #eaeaea; }
-  /* line 74, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
-  .footer a {
-    float: right;
-    text-decoration: underline !important; }
-    /* line 78, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
-    .footer a:link, .footer a:visited {
-      color: white; }
-    /* line 81, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
-    .footer a:hover {
-      color: #f2f2f2; }
-    /* line 84, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
-    .footer a:active {
-      color: #e0e0e0; }
+  color: black;
+  /*a {
+		float: right;
+		text-decoration: underline !important;
+
+		&:link, &:visited {
+		  color: white;
+		}
+		&:hover {
+			color: darken(white, 5%);
+		}
+		&:active {
+			color: darken(white, 12%);
+		}
+	}*/ }
+  /* line 95, C:/Users/lubieowoce/Documents/Squash City/wp-content/themes/squash-city/scss/app.scss */
+  footer a {
+    float: right; }
 
 /*# sourceMappingURL=app.css.map */

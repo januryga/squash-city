@@ -7,7 +7,11 @@
 			</div>
 		</a>
 		<div id="<?php the_slug() ?>" class="content">
-			<p><i class="mdi mdi-phone"></i> <?php the_phone() ?></p>
+			<p>
+                <a href="tel:<?php the_phone() ?>">
+                    <i class="mdi mdi-phone"></i> <?php the_phone() ?>
+                </a>
+            </p>
 			<p><i class="mdi mdi-email"></i> <?php the_email() ?></p>
 			<p><i class="mdi mdi-navigation"></i> <?php the_address() ?></p>
 

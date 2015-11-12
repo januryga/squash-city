@@ -1,4 +1,4 @@
-<table class="extra-table">
+<table class="lesson-table">
     <tbody>
 
         <col>

@@ -58,12 +58,21 @@ while ( $loop->have_posts() ) : $loop->the_post();
                 
                 
                 <br>
+                <br>
                 <h3>Zajęcia z trenerem</h3>
-                <p>
-                    Do ceny zajęć należy doliczyć cenę wynajęcia kortu wg. cennika.
-                </p>
+                
                 <!-- Lessons table -->
-                <?php get_template_part('partials/price-lessons-table'); ?>
+                <?php get_template_part('partials/price-lesson-table'); ?>
+                <div style="margin: 0.5rem 0 !important;">Do ceny zajęć należy doliczyć cenę wynajęcia kortu wg. cennika.</div>
+                <a href="<?php echo home_url() ?>/trenerzy"
+                   class="button round small">
+
+                    <i class="mdi mdi-account-multiple"></i>
+                     Poznaj naszych trenerów
+
+                </a>
+                <br>
+                <br>
                 
                 
                 <h3>Dodatkowe usługi</h3>

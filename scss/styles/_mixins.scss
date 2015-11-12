@@ -4,9 +4,9 @@ Mixins
 
 */
 
-@mixin card($no_bg: false) {
+@mixin card($no-bg: false) {
 
-    @if not $no_bg {
+    @if not $no-bg {
         background: white;
     }
 

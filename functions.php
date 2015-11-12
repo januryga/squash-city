@@ -67,10 +67,15 @@ function load_styles(){
 add_action('init', 'register_scripts');
 
 function register_scripts(){
-    //wp_register_script( $handle, $src, $deps, $ver, $in_footer );
-
-    wp_deregister_script('jquery');
-    wp_register_script( 'jquery', get_template_directory_uri() . "/js/vendor/jquery.js", array(), NULL, true);
+    //usage: wp_register_script( $handle, $src, $deps, $ver, $in_footer );
+    
+    //Because the wordpress built in jquery doesn't support using "$()":
+    wp_deregister_script('jquery'); 
+    wp_register_script(
+        'jquery',
+        get_template_directory_uri() . "/js/vendor/jquery.js",
+        array(), NULL, true
+    );
     
     // Everything is loaded in the footer because Foundation requires that.
     // Don't change the order of these two, they have to be first.
@@ -84,6 +89,13 @@ function register_scripts(){
     wp_register_script(
         'foundation',
         get_template_directory_uri() . "/js/foundation.min.js",
+        array(), NULL, true
+    );
+    
+    // For customizing the Foundation topbar:
+    wp_register_script(
+        'foundation_topbar',
+        get_template_directory_uri() . "/js/foundation/foundation.topbar.js",
         array(), NULL, true
     );
 
@@ -100,7 +112,7 @@ function register_scripts(){
         get_template_directory_uri() . "/js/vendor/modernizr.js",
         array(), NULL, true
     );
-
+    
     wp_register_script(
         'waypoints',
         get_template_directory_uri() . "/js/jquery.waypoints.min.js",
@@ -108,8 +120,8 @@ function register_scripts(){
     );
 
     wp_register_script(
-        'transparent_navbar',
-        get_template_directory_uri() . "/js/transparent-navbar.js",
+        'homepage_navbar',
+        get_template_directory_uri() . "/js/homepage-navbar.js",
         array(), NULL, true);
 
     wp_register_script(
@@ -136,21 +148,22 @@ function load_scripts() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('fastclick');
     wp_enqueue_script('foundation');
+    wp_enqueue_script('foundation_topbar');
     wp_enqueue_script('modernizr');
-    //wp_enqueue_script('app', true);
+    wp_enqueue_script('app');
     
     if( is_home() ){
         wp_enqueue_script('masonry');
         wp_enqueue_script('waypoints');
-        wp_enqueue_script('transparent_navbar');
+        wp_enqueue_script('homepage_navbar');
     }
     
-    if( is_page('kontakt') ){
+    elseif( is_page('kontakt') ){
         wp_enqueue_script('google_maps');
         wp_enqueue_script('acf_maps');
     }
     
-    if( is_page('trenerzy') ){
+    elseif( is_page('trenerzy') ){
         wp_enqueue_script('masonry');
     }
 }

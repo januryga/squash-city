@@ -4,7 +4,7 @@
     <col>
     <col>
     <thead>
-        <tr>
+        <tr class="days">
             <th colspan="3">Poniedziałek - Piątek</th>
             <th>Weekend</th>
         </tr>
