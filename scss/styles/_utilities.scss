@@ -7,18 +7,20 @@ Additional utility styles used in various places
 
 .tabs.with-border{
     
+    $tab-border-color: rgba(black, 0.2);
+    
     li:first-child{
         border-left: none;
     }
     li{
-        border-left: 1px solid $bordergrey;
+        border-left: 1px solid $tab-border-color;
     }
     
     
     li.active {
-        border-top:1px solid $bordergrey;
-        border-left:1px solid $bordergrey !important;
-        border-right:1px solid $bordergrey;
+        border-top:1px solid $tab-border-color;
+        border-left:1px solid $tab-border-color !important;
+        border-right:1px solid $tab-border-color;
     }
 }
 
@@ -33,7 +35,11 @@ h0 {
 
 
 .shadow {
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.23);
+    box-shadow: 0 2px 1px 0 rgba(black, 0.23);
+}
+
+.high-shadow {
+    box-shadow: 0 4px 10px 0 rgba(black, 0.26);
 }
 
 
@@ -41,4 +47,29 @@ h0 {
 	float:none;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.no-bg {
+    background-color: rgba(black, 0) !important;
+    
+    div { background-color: rgba(black, 0) !important; }
+    
+    section { background-color: rgba(black, 0) !important; }
+    
+    ul { background-color: rgba(black, 0) !important; }
+    
+    li { background-color: rgba(black, 0) !important; }
+        
+}
+
+.top-bar-no-bg {
+    @extend .no-bg;
+        
+    ul li:not(.active) { background-color: rgba(black, 0) !important; }
+    
+    li:not(.active) { background-color: rgba(black, 0) !important; }
+    
+    li:not(.active) a { background-color: rgba(black, 0) !important; }
+    
+    
 }

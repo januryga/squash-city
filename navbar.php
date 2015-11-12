@@ -1,6 +1,6 @@
 <!--  Navbar  -->
 <div class="fixed">
-	<nav class="top-bar shadow" data-topbar role="navigation">
+	<nav class="top-bar high-shadow" data-topbar role="navigation">
 		<ul class="title-area">
 			<li class="name">
 				<h1 class="hide-for-medium-only"><a href="<?php echo home_url() ?>">Squash City</a></h1>

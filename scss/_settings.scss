@@ -56,6 +56,7 @@
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import 'foundation/_functions';
+//$namespace : false;
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -118,19 +119,21 @@ $niceblue: #70bee5;
 $softgrey: #e0e0e0;
 $lightgrey: #f4f4f4;
 $bordergrey: #bababa;
-$bordergrey-t: rgba(0, 0, 0, 0.22);
-$bordergrey-t5: rgba(0, 0, 0, 0.05);
-$bordergrey-t12: rgba(0, 0, 0, 0.12);
+$shade: rgba(black, 0.22);
+$shade5: rgba(black, 0.05);
+$shade12: rgba(black, 0.12);
+$none: rgba(black, 0);
 
 //$base: rgb(234, 151, 68);
-$base: #6b97d4;
-//$bg-color: lighten($base, 32%);
+$base: #82b7eb;
+
+$banner-color: $base;
+
 $bg-color: $softgrey;
-$link-color: darken($base, 20%);
 
 
 // We use these as default colors throughout
-$primary-color: black;
+$primary-color: darken($base, 20%);
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -1422,8 +1425,8 @@ $tabs-content-padding: 0;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: white;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $base;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);
@@ -1434,18 +1437,18 @@ $topbar-bg-color: white;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: black;
-$topbar-link-color-hover: black;
-$topbar-link-color-active: black;
-$topbar-link-color-active-hover: black;
+$topbar-link-color: white;
+$topbar-link-color-hover: white;
+$topbar-link-color-active: white;
+$topbar-link-color-active-hover: white;
 // $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(14);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: $lightgrey;
+$topbar-link-bg-hover: darken($topbar-bg, 2%);
 // $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-active: darken($lightgrey, 11%);
-$topbar-link-bg-active-hover: darken($lightgrey, 14%);
+$topbar-link-bg-active: darken($topbar-bg, 4%);
+$topbar-link-bg-active-hover: darken($topbar-bg, 6%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
@@ -1455,10 +1458,10 @@ $topbar-link-bg-active-hover: darken($lightgrey, 14%);
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: white;
+$topbar-dropdown-bg: $topbar-bg;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-$topbar-dropdown-link-bg: white;
+$topbar-dropdown-link-bg: $topbar-bg;
 // $topbar-dropdown-link-bg-hover: $jet;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
@@ -1475,10 +1478,10 @@ $topbar-dropdown-link-bg: white;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-$topbar-menu-link-color: #272727;
-$topbar-menu-icon-color: black;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+$topbar-menu-link-color: rgba(white, 0.65);
+$topbar-menu-icon-color: white;
+$topbar-menu-link-color-toggled: rgba(white, 0.5);
+$topbar-menu-icon-color-toggled: rgba(white, 0.7);
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
@@ -1491,8 +1494,10 @@ $topbar-menu-icon-color: black;
 // $topbar-input-height: rem-calc(28);
 
 // Divider Styles
-// $topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
+ //$topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: -13%);
+ //$topbar-divider-border-bottom: solid 1px red;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+ $topbar-divider-border-top: solid 1px red;
 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";

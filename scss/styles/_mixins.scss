@@ -20,6 +20,6 @@ Mixins
 	width: $size;
 	height: $size;
 
-	border: 2px solid $bordergrey-t;
+	border: 2px solid shade;
 	border-radius: ($size / 2) !important;
 }

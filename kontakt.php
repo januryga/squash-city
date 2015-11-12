@@ -8,8 +8,13 @@ Template Name: Kontakt
 
 <!-- Content -->
 <div class="row">
+    <div class="small-12 medium-9 large-10 small-centered column">
+        <h0>Kontakt</h0>
+    </div>
+</div>
+
+<div class="row">
 		<div class="small-12 medium-9 large-10 small-centered column">
-			<h0>Kontakt</h0>
 			<!-- Locations -->
 			<ul class="small-block-grid-1
 					   medium-block-grid-1
@@ -38,4 +43,4 @@ endwhile;
 		</div>
 	</div>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

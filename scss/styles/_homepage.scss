@@ -4,8 +4,11 @@ Styles for the homepage (index.php)
 
 */
 
+.gradient-bg {
+    background: linear-gradient($base 0%, $base 50%, $none 100%);
+}
 
-.welcome-banner {
+#welcome-banner {
     
 	display:block;
 	overflow:auto;
@@ -17,7 +20,7 @@ Styles for the homepage (index.php)
     margin-bottom: 0.95rem;
     
     //$overlay-color: rgb(234, 151, 68);
-    $overlay-color: rgba($base, 0.95);
+    $overlay-color: rgba($banner-color, 0.95);
     background: 
         /* top, transparent color, faked with gradient */ 
         linear-gradient(
@@ -116,7 +119,7 @@ Styles for the homepage (index.php)
 
 			width:100%;
 			max-height:9rem;
-			border-bottom: 1px solid $bordergrey-t;
+			border-bottom: 1px solid $shade;
 		}
 
 		article-title {

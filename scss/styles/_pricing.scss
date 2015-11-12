@@ -44,11 +44,11 @@ Styles for Cennik (cennik.php)
 
 	tr.hours {
 		font-weight: 300;
-		border-bottom: 1px solid $bordergrey-t12;
+		border-bottom: 1px solid $shade12;
 		th {
 			padding:0.15rem 0.5rem !important;
 			background-color: $lightgrey;
-			border-right: 1px solid $bordergrey-t5;
+			border-right: 1px solid $shade5;
 		}
         //as in "hour", used in Cennik
         ho {
@@ -69,12 +69,12 @@ Styles for Cennik (cennik.php)
 
 
 	col {
-		border-right: 1px solid $bordergrey-t5;
+		border-right: 1px solid $shade5;
 	}
     col:nth-last-child(1) {
         width: 30%;
         border-right: 0;
-        border-left: 2px solid $bordergrey-t5;
+        border-left: 2px solid $shade5;
     }
 
 
@@ -107,7 +107,7 @@ Styles for Cennik (cennik.php)
     margin-bottom: 2rem !important;
 
     col {
-		border: 1px solid $bordergrey-t5;
+		border: 1px solid $shade5;
 	}
 
     tr:nth-child(even) {
